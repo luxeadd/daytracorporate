@@ -1,0 +1,73 @@
+@use "global" as *;
+.view-more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+}
+
+.view-more::before {
+  content: "";
+  display: block;
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  border: 2px solid $color-accent;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0
+
+}
+
+.view-more__text {
+  font-family: $second-font-family;
+  position: relative;
+  color: $white;
+}
+
+.view-more__text::before {
+  content: "";
+  display: block;
+  width: rem(64);
+  height: rem(2);
+  position: absolute;
+  top: 60%;
+  right: rem(-75);
+  background: $white;
+  
+}
+
+.view-more__text::after {
+  content: "";
+  display: block;
+  width: rem(15);
+  height: rem(2);
+  position: absolute;
+  right: rem(-77);
+  top: 40%;
+  background: $white;
+  transform: rotate(39deg);
+}
+
+
+
+.view-more.view-more--black::before {
+ background: $color-accent;
+}
+
+.view-more__text.view-more__text--black {
+  color: $black;
+}
+
+.view-more__text.view-more__text--black::before {
+  background: $black;
+  
+}
+
+.view-more__text.view-more__text--black::after {
+  background: $black;
+  transform: rotate(39deg);
+}

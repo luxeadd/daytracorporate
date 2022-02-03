@@ -17,26 +17,39 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: 'Noto Sans JP', sans-serif;
+$second-font-family: 'Fira Sans', sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
   font-family: $base-font-family;
 }
 
+
+
 // フォントウェイト
 $regular: 300;
-$normal: 400;
+$normal: 500;
 $bold: 700;
+
+body {
+  font-weight: $normal;
+}
 
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #1A1A1A;
 $white: #fff;
+
+$color-main : #163F74;
+$color-main-dark :  #002a52;
+$color-main-dark2 :  #023E78;
+$color-main-light :  #EEF3F8;
+$color-accent : #FEF251;
+$color-accent2  :  #D33365;
 
 
 ////////////////////
