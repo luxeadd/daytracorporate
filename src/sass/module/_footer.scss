@@ -1,8 +1,55 @@
 @use "global" as *;
 
 .footer {
-  font-size: rem(50);
-  color: red;
-  
+ background: $black;
+ padding: rem(65) 0 rem(13);
+ color: $white;
+ 
+ @include mq(tab) {
+   padding: rem(114) 0 rem(19);
+   
+ }
 
+}
+
+.footer__logo {
+ width: min(100%, rem(283));
+ margin: auto;
+ 
+ @include mq(tab) {
+  width: min(100%, rem(369));
+  
+}
+}
+
+.footer__meta{
+ width: min(100%, rem(235));
+ margin: rem(23) auto 0;
+
+}
+
+.footer__text{
+  display: flex;
+
+}
+
+.footer__text-left{
+
+}
+
+.footer__text-right {
+  margin-left: rem(10);
+}
+
+.footer__copy {
+ font-size: rem(12);
+ margin-top: rem(40);
+ text-align: center;
+ 
+ @include mq(tab) {
+   margin-top: rem(80);
+   font-size: rem(14);
+   
+   
+ }
 }

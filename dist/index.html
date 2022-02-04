@@ -30,17 +30,225 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <a href="" class="btn">無料ダウンロード </a><!-- /.btn -->
-  <a href="" class="btn btn--blue">無料ダウンロード </a><!-- /.btn -->
-  <a href="" class="btn btn--arrow">無料ダウンロード </a><!-- /.btn -->
-  <a href="" class="btn btn--yellow">無料ダウンロード </a><!-- /.btn -->
-  <a href="" class="view-more">
-    <p href="" class="view-more__text">view-more </p><!-- /.view-more__text -->
+  <!-- ヘッダー -->
+  <header class="l-header header js-header">
+    <div class="header__inner">
+      <!-- ヘッダーロゴ -->
+      <div class="header__logo">
+        <a href="/">
+          <img class="logo" src="./images/common/logo.svg" alt="Grobal Standard">
+        </a>
+      </div><!-- /.header__logo -->
+      <!-- ドロワーアイコン  -->
+      <button type="button" id="js-hamburger" class="header__drawer hamburger" aria-controls="js-drawer-menu" aria-expanded="false" area-label="メニューを開閉する">
+        <span class="hamburger__line"></span>
+      </button>
+      <!-- ドロワーメニュー -->
+      <div class=" header__drawer-menu  drawer-menu" id="js-drawer-menu" area-hidden="true">
+        <ul class="drawer-menu__items">
+          <li id="js-drawer-menu__item" class="drawer-menu__item  "><a href="">トップ</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">当社について</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">サービス</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">導入事例</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">お知らせ</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__download"><a href="">資料ダウンロード</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__contact"><a href="">お問い合わせ</a></li>
+        </ul>
+      </div><!-- /.sheader-menu -->
+      <!-- pcーメニュー -->
+      <nav class="header__pc-menu header-menu ">
+        <ul class="header-menu__items">
+          <li class="header-menu__item"><a href="">トップ</a></li><!-- /.pc-menu__item -->
+          <li class="header-menu__item"><a href="">当社について</a></li><!-- /.pc-menu__item -->
+          <li class="header-menu__item"><a href="">サービス</a></li><!-- /.pc-menu__item -->
+          <li class="header-menu__item"><a href="">導入事例</a></li><!-- /.pc-menu__item -->
+          <li class="header-menu__item"><a href="">お知らせ</a></li><!-- /.pc-menu__item -->
+          <li class="header-menu__download">
+            <a href="" class="btn">無料ダウンロード</a><!-- /.btn -->
+          </li><!-- /.header-menu__download -->
+          <li class="header-menu__contact">
+            <a href="" class="btn btn--blue">無料ダウンロード</a><!-- /.btn -->
+          </li><!-- /.header-menu__download -->
+        </ul><!-- /.pc-menu__items -->
+      </nav><!-- /.header__menu -->
+      <!-- ドロワーメニュー展開時背景 -->
+      <div class="header__overlay" id="js-header__overlay"></div>
+    </div><!-- /.header__inner -->
+  </header>
+  <!-- MV -->
+  <div class="top-mv">
+    <div class="top-mv__img">
+      <picture>
+        <source srcset="./images/common/top-mv.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+        <img src="./images/common/top-mv-sp1.jpg" alt="MV画像">
+      </picture>
+    </div><!-- /.top-mv__img -->
+    <div class="top-mv__body">
+      <h2 class="top-mv__title-en u-sp">
+        <span>you can</span><br>
+        <span>change</span><br>
+        <span>the world</span>
+      </h2><!-- /.top-mv__title -->
+      <h2 class="top-mv__title-en u-pc">
+        <span>you can change</span><br>
+        <span>the world</span>
+      </h2><!-- /.top-mv__title -->
+      <p class="too-mv__title-jp">世界で活躍できるグローバルな人材を育てる</p><!-- /.too-mv__title-jp -->
+    </div><!-- /.top-mv__body -->
+  </div><!-- /.top-mv -->
+  <!-- about -->
+  <section class="top-about">
+    <div class="inner">
+      <div class="top-about__flex ">
+        <div class="top-about__title">
+          <div class="section-title">
+            <h2 class="section-title__en">about us</h2><!-- /.section-title__title -->
+            <p class="section-title__jp">当社について</p><!-- /.section-title__title -->
+          </div><!-- /.section-title -->
+        </div><!-- /.top-about__title -->
+        <div class="top-about__link">
+          <a href="#" class="view-more">
+            <p class="view-more__text">View more</p><!-- /.view-more__text -->
+          </a><!-- /.view-more -->
+        </div><!-- /.top-about__link -->
+        <div class="top-about__body">
+          <div class="about-block">
+            <div class="about-block__inner">
+              <div class="about-block__text-box">
+                <p class="about-block__text text-main">急速に広がったグローバル社会に対応できる人材を育成することで、文化・言語の垣根を越えたコミュニケーションを活発にし、一人でも多くの人が豊かに暮らせる世界を実現することを使命とする。</p><!-- /.about-block__text -->
+                <p class="about-block__text text-main">コミュニケーションスキル習得をサポートすることで一人でも多くのビジネスパーソンの視野を広げ、世界を舞台に新しい相乗効果を生む未来を創造する。 </p><!-- /.about-block__text -->
+                <p class="about-block__text text-main">文化の垣根を越えた人と人とのつながりが新しい価値を生むことを信念とする。</p><!-- /.about-block__text -->
+              </div><!-- /.about-block_text -->
+              <div class="about-block__img">
+                <img src="./images/common/top-about.jpg" alt="当社について">
+              </div><!-- /.about-block__img -->
+            </div><!-- /.inner -->
+          </div><!-- /.about-block -->
+        </div><!-- /.top-about__body -->
+      </div><!-- /.top-about__flex -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-about -->
+  <!-- service -->
+  <section class="top-service">
+    <div class="inner">
+      <div class="top-service__flex ">
+        <div class="top-service__title">
+          <div class="section-title">
+            <h2 class="section-title__en">service</h2><!-- /.section-title__title -->
+            <p class="section-title__jp">サービス</p><!-- /.section-title__title -->
+          </div><!-- /.section-title -->
+        </div><!-- /.top-service__title -->
+        <div class="top-service__link">
+          <a href="#" class="view-more view-more--black">
+            <p class="view-more__text view-more__text--black">View more</p><!-- /.view-more__text -->
+          </a><!-- /.view-more -->
+        </div><!-- /.top-service__link -->
+        <div class="top-service__body">
+          <div class="service-block">
+            <ul class="service-block_items">
+              <li class="service-block__item">
+                <div class="service-block__img">
+                  <img src="./images/common/top-service1.jpg" alt="ビジネス英語研修画像">
+                  <h3 class="service-block__title">
+                    <span>ビジネス英語研修</span>
+                  </h3><!-- /.service-block__title -->
+                </div><!-- /.service-block__img -->
+                <p class="service-block__text text-main"> ビジネス英会話はこれからの時代、すべてのビジネスパーソンが学ぶべき必須スキルと考えおります。海外にビジネス展開する際にはもちろんのこと、日本国内でも英会話コミュニケーションができることによってチャンスが掴める場面があります。 </p><!-- /.service-block__text -->
+              </li><!-- /.service-block__item -->
+              <li class="service-block__item">
+                <div class="service-block__img">
+                  <img src="./images/common/top-service2.jpg" alt=" ">
+                  <h3 class="service-block__title">
+                    <span>異文化</span><span>コミュニケーション</span>
+                  </h3><!-- /.service-block__title -->
+                </div><!-- /.service-block__img -->
+                <p class="service-block__text text-main"> 急速にグローバル化が進んでおり、ビジネスの場面に限らず様々な文化的背景を持つ者同士の交流はもはや日常的な光景となりました。<br>言語や文化が異なる相手を理解することで世界が広がり、新たなビジネスチャンスに巡り会うことは少なくありません。 </p><!-- /.service-block__text -->
+              </li><!-- /.service-block__item -->
+              <li class="service-block__item">
+                <div class="service-block__img">
+                  <img src="./images/common/top-service3.jpg" alt="ビジネス英語研修画像">
+                  <h3 class="service-block__title">
+                    <span>ビジネス留学</span><span>サポートプログラム</span>
+                  </h3><!-- /.service-block__title -->
+                </div><!-- /.service-block__img -->
+                <p class="service-block__text text-main"> 将来的に海外で働きたい方に向けた講座をご用意しております。一般的には3ヶ月〜1年の期間で基本的な英会話スキルと、海外でのビジネスマナー習得を目指します。<br> 通常の語学留学では得られないビジネスの場で通用するコミュニケーションスキル習得に重点をおいておりますので、海外でビジネス展開する際に自信を持って活動することができるようになります。 </p><!-- /.service-block__text -->
+              </li><!-- /.service-block__item -->
+            </ul><!-- /.service-block_items -->
+          </div><!-- /.service-block -->
+        </div><!-- /.top-service__body -->
+      </div><!-- /.top-service__flex -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-service -->
+  <!-- ダウンロード・コンタクト -->
+  <div class="footer-top">
+    <div class="footer-top__body">
+      <div class="footer-top__title">
+        <div class="section-title section-title--small">
+          <h2 class="section-title__en section-title__en--small">download</h2><!-- /.section-title__title -->
+          <p class="section-title__jp section-title__jp--small">資料ダウンロード</p><!-- /.section-title__title -->
+        </div><!-- /.section-title -->
+      </div><!-- /.footer-top__title -->
+      <div class="footer-top__btn">
+        <a href="" class="btn btn--yellow">View more</a><!-- /.btn -->
+      </div><!-- /.footer-top__btn -->
+    </div><!-- /.footer-top__body -->
+    <div class="footer-top__body">
+      <div class="footer-top__title">
+        <div class="section-title section-title--small">
+          <h2 class="section-title__en section-title__en--small">contact</h2><!-- /.section-title__title -->
+          <p class="section-title__jp section-title__jp--small">お問い合わせ</p><!-- /.section-title__title -->
+        </div><!-- /.section-title -->
+      </div><!-- /.footer-top__title -->
+      <div class="footer-top__btn">
+        <a href=" " class="btn btn--yellow">View more</a><!-- /.btn -->
+      </div><!-- /.footer-top__btn -->
+    </div><!-- /.footer-top__body -->
+  </div><!-- /.download-contact -->
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="inner">
+      <div class="footer__logo">
+        <img src="./images/common/logo-white.svg" alt="global Standard">
+      </div><!-- /.footer__logo -->
+      <div class="footer__meta">
+        <div class="footer__text text-main">
+          <div class="footer__text-left"> 〒550-1000 </div><!-- /.footer__text-left -->
+          <div class="footer__text-right"> 大阪市西区土佐堀9-5-5</div><!-- /.footer__text-right -->
+        </div><!-- /.footer__text text-main -->
+        <dl class="footer__text text-main">
+          <dt class="footer__text-left"> TEL </dt><!-- /.footer__text-left -->
+          <dd class="footer__text-right"> 06-123-4567</dd><!-- /.footer__text-right -->
+        </dl><!-- /.footer__text text-main -->
+        <dl class="footer__text text-main">
+          <dt class="footer__text-left "> FAX </dt><!-- /.footer__text-left -->
+          <dd class="footer__text-right"> 06-123-4568</dd><!-- /.footer__text-right -->
+        </dl><!-- /.footer__text text-main -->
+      </div><!-- /.footer__meta -->
+      <div class="footer__copy">&copy;2021 Global Standard. All Rights Reserved.</div><!-- /.footer__copy -->
+    </div><!-- /.inner -->
+  </footer>
+  <div class="margin"></div><!-- /.margin -->
+  <a href="#" class="btn"> ダウンロード</a><!-- /.btn -->
+  <a href="#" class="btn btn--blue">無料ダウンロード</a><!-- /.btn -->
+  <a href="#" class="btn btn--arrow">無料ダウンロード</a><!-- /.btn -->
+  <a href="#" class="btn btn--yellow">無料ダウンロード</a><!-- /.btn -->
+  <a href="#" class="view-more">
+    <p class="view-more__text">view-more</p><!-- /.view-more__text -->
   </a><!-- /.view-more -->
-  <a href="" class="view-more view-more--black">
-    <p href="" class="view-more__text view-more__text--black">view-more </p><!-- /.view-more__text -->
+  <a href="#" class="view-more view-more--black">
+    <p class="view-more__text view-more__text--black">view-more</p><!-- /.view-more__text -->
   </a><!-- /.view-more -->
-  <div class="footer">
-  </div>
+  <div class="section-title">
+    <h2 class="section-title__en">about us</h2><!-- /.section-title__title -->
+    <p class="section-title__jp">私たちについて</p><!-- /.section-title__title -->
+  </div><!-- /.section-title -->
+  <div class="section-title section-title--white">
+    <h2 class="section-title__en section-title__en--white">about us</h2><!-- /.section-title__title -->
+    <p class="section-title__jp section-title__jp--white">私たちについて</p><!-- /.section-title__title -->
+  </div><!-- /.section-title -->
+  <div class="section-title section-title--small">
+    <h2 class="section-title__en section-title__en--small">about us</h2><!-- /.section-title__title -->
+    <p class="section-title__jp section-title__jp--small">私たちについて</p><!-- /.section-title__title -->
+  </div><!-- /.section-title -->
 </body>
 </html>

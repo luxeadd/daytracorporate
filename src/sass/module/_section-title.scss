@@ -1,0 +1,58 @@
+@use 'global' as * ;
+
+.section-title__en {
+  font-size: rem(52);
+  font-family: $second-font-family;
+  line-height: 1.21538;
+  color: $color-main-dark2;
+  text-transform: uppercase;
+  font-weight: $normal;
+
+  @include mq(tab) {
+    font-size: rem(100);
+
+  }
+
+}
+
+.section-title__jp {
+  font-size: rem(16);
+  color: $color-main-dark2;
+  font-weight: $bold;
+
+@include mq(tab) {
+  font-size: rem(24);
+
+}
+}
+
+.section-title__en.section-title__en--white {
+  color: $white;
+}
+
+.section-title__jp.section-title__jp--white {
+  color: $white;
+
+}
+
+
+
+.section-title__en.section-title__en--small {
+  font-size: rem(40);
+  line-height: 1.2;
+  color: $white;
+
+  @include mq(tab) {
+    font-size: rem(60);
+
+  }
+}
+
+.section-title__jp.section-title__jp--small {
+  color: $white;
+
+  @include mq(tab) {
+    font-size: rem(16);
+  }
+
+}

@@ -36,6 +36,7 @@ body {
   font-weight: $normal;
 }
 
+
 ////////////////////
 // 色の指定
 ////////////////////
@@ -47,10 +48,15 @@ $white: #fff;
 $color-main : #163F74;
 $color-main-dark :  #002a52;
 $color-main-dark2 :  #023E78;
+$color-main-dark3 :  #0052A2;
+$color-back :  #EDF3F8;
 $color-main-light :  #EEF3F8;
 $color-accent : #FEF251;
 $color-accent2  :  #D33365;
 
+body {
+  color: $black;
+}
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -60,7 +66,7 @@ $color-accent2  :  #D33365;
 $breakpoints: (
   sm: 600,
   tab: 768,
-  lg: 1024,
+  lg: 1200,
   xl: 1440,
 );
 
@@ -91,7 +97,7 @@ $mediaquerys: (
 ////////////////////
 
 //768px以上を表示
-.u-desktop {
+.u-pc {
   display: none;
   @include mq("tab") {
     display: block;
@@ -99,7 +105,7 @@ $mediaquerys: (
 }
 
 //モバイルのみ表示
-.u-mobile {
+.u-sp {
   @include mq("tab") {
     display: none;
   }

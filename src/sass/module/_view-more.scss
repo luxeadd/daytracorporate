@@ -4,6 +4,12 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  width: rem(188);
+  
+  @include mq(tab) {
+    width: rem(285);
+    
+  }
 
 }
 
@@ -18,14 +24,23 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0
+  right: 0;
 
+  @include mq(tab) {
+    width: rem(51);
+    height: rem(51);
+  }
 }
 
 .view-more__text {
+  font-size: rem(20);
   font-family: $second-font-family;
   position: relative;
   color: $white;
+
+  @include mq(tab) {
+    font-size: rem(32);
+  }
 }
 
 .view-more__text::before {
@@ -34,9 +49,14 @@
   width: rem(64);
   height: rem(2);
   position: absolute;
-  top: 60%;
+  top: 55%;
   right: rem(-75);
   background: $white;
+  
+  @include mq(tab) {
+    width: rem(94);
+    right: rem(-111);
+  }
   
 }
 
@@ -50,6 +70,12 @@
   top: 40%;
   background: $white;
   transform: rotate(39deg);
+  
+  @include mq(tab) {
+    right: rem(-114);
+    top: 45%;
+    
+  }
 }
 
 

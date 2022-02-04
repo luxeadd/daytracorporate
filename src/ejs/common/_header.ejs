@@ -6,7 +6,7 @@
 			<a href="/">
        <img class="logo" src="./images/common/logo.svg" alt="Grobal Standard">
       </a>
-     </div><!-- /.eader__logo -->
+     </div><!-- /.header__logo -->
 
 		<!-- ドロワーアイコン  -->
     <button type="button" id="js-hamburger" class="header__drawer hamburger" aria-controls="js-drawer-menu" aria-expanded="false" area-label="メニューを開閉する">
@@ -20,7 +20,9 @@
           <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">当社について</a></li>
           <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">サービス</a></li>
           <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">導入事例</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">.お知らせ</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="">お知らせ</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__download"><a href="">資料ダウンロード</a></li>
+          <li id="js-drawer-menu__item" class="drawer-menu__contact"><a href="">お問い合わせ</a></li>
         </ul>
       </div><!-- /.sheader-menu -->
   
@@ -32,7 +34,14 @@
           <li class="header-menu__item"><a href="">サービス</a></li><!-- /.pc-menu__item -->
           <li class="header-menu__item"><a href="">導入事例</a></li><!-- /.pc-menu__item -->
           <li class="header-menu__item"><a href="">お知らせ</a></li><!-- /.pc-menu__item -->
+          <li class="header-menu__download">
+            <%- include('../parts/_btn',{text:'無料ダウンロード', link:''}) %>
+          </li><!-- /.header-menu__download -->
+          <li class="header-menu__contact">
+            <%- include('../parts/_btn-blue',{text:'無料ダウンロード', link:''}) %>
+          </li><!-- /.header-menu__download -->
         </ul><!-- /.pc-menu__items -->
+
       </nav><!-- /.header__menu -->
 
       <!-- ドロワーメニュー展開時背景 -->

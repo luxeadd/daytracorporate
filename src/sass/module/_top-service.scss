@@ -1,0 +1,57 @@
+@use 'global' as * ; 
+
+.top-service{
+  padding-bottom: rem(158);
+  background: linear-gradient(11deg, #ffffff 0%, #ffffff 5%, #EDF3F8 5%, #EDF3F8 54%, #ffffff 54%);
+  position: relative;
+  @include mq(tab) {
+    background: linear-gradient(10deg, #ffffff 0%, #ffffff 8%, #EDF3F8 8%, #EDF3F8 52%, #ffffff 52%);
+    padding-bottom: rem(102);
+    
+  }
+} 
+
+
+
+
+.top-service__flex {
+  display: flex;
+  flex-direction: column;
+  @include mq(tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.top-service__title{
+  order: 1;
+  @include mq(tab) {
+    flex: 0 0 50%;
+    
+  }
+  
+}
+.top-service__link{
+  margin-top: rem(41);
+  order: 3;
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  @include mq(tab) {
+    order: 2;
+    margin-top: initial;
+    
+  }
+}
+.top-service__body{
+  margin-top: rem(67);
+  position: relative;
+  z-index: 2;
+  order: 2;
+  @include mq(tab) {
+    flex: 0 0 100%;
+    order: 3;
+    margin-top: rem(83);
+  }
+}

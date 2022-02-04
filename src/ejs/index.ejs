@@ -2,16 +2,72 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 <body>
-  <%# include('./common/_header') %>
+  <!-- ヘッダー -->
+  <%- include('./common/_header') %>
   
-  <%- include('./parts/_btn',{text:'無料ダウンロード '}) %>
-  <%- include('./parts/_btn-blue',{text:'無料ダウンロード '}) %>
-  <%- include('./parts/_btn-arrow',{text:'無料ダウンロード '}) %>
-  <%- include('./parts/_btn-yellow',{text:'無料ダウンロード '}) %>
-  <%- include('./parts/_view-more',{text:'view-more '}) %>
-  <%- include('./parts/_view-more--black',{text:'view-more '}) %>
+  <!-- MV -->
+  <%- include('./parts/_top-mv') %>
   
- <%- include('./common/_footer') %>
+
+  <!-- about -->
+  <section class="top-about">
+    <div class="inner">
+      <div class="top-about__flex ">
+        <div class="top-about__title">
+          <%- include('./parts/_section-title',{title:'about us',text:'当社について'}) %>
+        </div><!-- /.top-about__title -->
+      <div class="top-about__link">
+        <%- include('./parts/_view-more',{text:'View more',link:'#'}) %>
+      </div><!-- /.top-about__link -->
+      <div class="top-about__body">
+        <%- include('./parts/_about-block') %>
+      </div><!-- /.top-about__body -->
+    </div><!-- /.top-about__flex -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-about -->
+
+  
+   <!-- service -->
+   <section class="top-service">
+    <div class="inner">
+      <div class="top-service__flex ">
+        <div class="top-service__title">
+          <%- include('./parts/_section-title',{title:'service',text:'サービス'}) %>
+        </div><!-- /.top-service__title -->
+      <div class="top-service__link">
+        <%- include('./parts/_view-more--black',{text:'View more',link:'#'}) %>
+      </div><!-- /.top-service__link -->
+      <div class="top-service__body">
+        <%- include('./parts/_service-block') %>
+      </div><!-- /.top-service__body -->
+    </div><!-- /.top-service__flex -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-service -->
+
+  
+  
+  
+<!-- ダウンロード・コンタクト -->
+  <%- include('./common/_footer-top') %>
+
+  <!-- フッター -->
+  <%- include('./common/_footer') %>
+
+
+
+  <div class="margin"></div><!-- /.margin -->
+  
+  <%- include('./parts/_btn',{text:' ダウンロード', link:'#'}) %>
+  <%- include('./parts/_btn-blue',{text:'無料ダウンロード',link:'#'}) %>
+  <%- include('./parts/_btn-arrow',{text:'無料ダウンロード',link:'#'}) %>
+  <%- include('./parts/_btn-yellow',{text:'無料ダウンロード',link:'#'}) %>
+  <%- include('./parts/_view-more',{text:'view-more',link:'#'}) %>
+  <%- include('./parts/_view-more--black',{text:'view-more',link:'#'}) %>
+  <%- include('./parts/_section-title',{title:'about us',text:'私たちについて'}) %>
+  <%- include('./parts/_section-title--white',{title:'about us',text:'私たちについて'}) %>
+  <%- include('./parts/_section-title--small',{title:'about us',text:'私たちについて'}) %>
+  
+  
   </body>
 </html>
 
