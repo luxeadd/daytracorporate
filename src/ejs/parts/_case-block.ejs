@@ -1,0 +1,72 @@
+<div class="case-block">
+  <div class="case-block__items">
+
+    <% const caseLists=[
+  {
+    link:"" ,
+    img:"./images/common/case1.jpg" ,
+    alt:"AAA株式会社様ロゴ" ,
+    title:"AAA株式会社 様" ,
+    category:"ビジネス英語研修" ,
+  },
+  {
+    link:"" ,
+    img:"./images/common/case2.jpg" ,
+    alt:"合同会社BBB 様ロゴ" ,
+    title:"合同会社BBB 様" ,
+    category:"異文化コミュニケーション" ,
+  },
+  {
+    link:"" ,
+    img:"./images/common/case3.jpg" ,
+    alt:"株式会社CCC 様ロゴ" ,
+    title:"株式会社CCC 様" ,
+    category:"ビジネス留学プログラム" ,
+  },
+  {
+    link:"" ,
+    img:"./images/common/case4.jpg" ,
+    alt:"DDD株式会社 様ロゴ" ,
+    title:"DDD株式会社 様" ,
+    category:"異文化コミュニケーション" ,
+  },
+  {
+    link:"" ,
+    img:"./images/common/case5.jpg" ,
+    alt:"EEE株式会社 様ロゴ" ,
+    title:"EEE株式会社 様" ,
+    category:"ビジネス留学プログラム" ,
+  },
+  {
+    link:"" ,
+    img:"./images/common/case6.jpg" ,
+    alt:"FFF株式会社 様ロゴ" ,
+    title:"FFF株式会社 様" ,
+    category:"ビジネス英語研修" ,
+  },
+ ] %>
+        <% for (var caseList of caseLists) {%>
+          <article class="case-block__item">
+            <a href="<%= caseList.link %>">
+              <div class="case-block__header">
+                <figure class="case-block__figure">
+                  <img src="<%= caseList.img %>" alt="<%= caseList.alt %>" >
+                </figure>
+              </div><!-- /.case-block__header -->
+              <div class="case-block__body">
+                <h3 class="case-block__title"><%= caseList.title %></h3>
+              </div><!-- /.case-block__body -->
+              <div class="case-block__footer">
+                <div class="case-block__category"><%- caseList.category %></div><!-- /.case-block__category -->
+                <div class="case-block__link"></div><!-- /.case-block__link -->
+              </div><!-- /.case-block__footer -->
+            </a>
+          </article>
+
+        <% } %>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /.case-block__items -->
+</div><!-- /.case-block -->

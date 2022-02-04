@@ -1,8 +1,8 @@
 @use 'global' as * ; 
 
 .top-about{
-  padding-bottom: rem(136);
-  background: linear-gradient(11deg, #ffffff 0%, #ffffff 3%, #EDF3F8 3%, #EDF3F8 82%, #ffffff 82%);
+  padding-bottom: rem(173);
+  background: linear-gradient(11deg, #ffffff 0%, #ffffff 6%, #EDF3F8 6%, #EDF3F8 82%, #ffffff 82%);
   position: relative;
   @include mq(tab) {
     background: linear-gradient(10deg, #ffffff 0%, #ffffff 20%, #EDF3F8 20%, #EDF3F8 68%, #ffffff 68%);
@@ -18,7 +18,7 @@
  background: url(../images/common/about-back.jpg) no-repeat center center / cover;
  position: absolute;
  right: 0;
- bottom: rem(99);
+ bottom: rem(135);
  
  @include mq(tab) {
    width: calc(500 / 1280) * 100vw;
@@ -36,7 +36,7 @@
   background: rgba($color: $color-main-dark2, $alpha: 0.8);
   position: absolute;
   right: 0;
-  bottom: rem(99);
+  bottom: rem(135);
 
   @include mq(tab) {
     width: calc(500 / 1280) * 100vw;

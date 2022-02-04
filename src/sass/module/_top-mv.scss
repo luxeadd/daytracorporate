@@ -17,6 +17,10 @@
   width: calc(335 / 375) * 100%;
   height: 100%;
   margin-left: auto;
+
+  @include mq(tab) {
+   width: 93%; 
+  }
 }
 
 .top-mv__img img{
@@ -33,7 +37,7 @@
  
  @include mq(tab) {
    bottom: rem(60);
-   left: calc(25 / 1280) * 100%;
+   left: 4%;
    
  }
 }
@@ -57,7 +61,7 @@ margin-top: rem(6);
 background: $white;
 
 @include mq(tab) {
-  margin-top: rem(16);
+  margin-top: rem(10);
 }
 }
 
@@ -68,7 +72,8 @@ background: $white;
   background: $color-main-dark;
   color: $white;
    @include mq(tab) {
-     margin-top: rem(16);
+     font-size: rem(20);
+     margin-top: rem(5);
      
    }
 }

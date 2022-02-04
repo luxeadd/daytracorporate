@@ -1,0 +1,40 @@
+<% const newsLists=[
+  {
+    category:" 営業時間 " ,
+    datetime:" 2021-07-20 " ,
+    date:" 2021.07.20 " ,
+    title:" お盆期間中の営業について" ,
+  },
+  {
+    category:"その他 " ,
+    datetime:" 2021.06.01 " ,
+    date:"2021.06.01 " ,
+    title:" 新型コロナウイルス対策ご協力のお願い" ,
+  },
+  {
+    category:" その他" ,
+    datetime:" 2021.05.01 " ,
+    date:"2021.05.01 " ,
+    title:" オンライン英会話スクール「グッドイングリッシュオンライン株式会社」との業務提携について" ,
+  },
+ ] %>
+
+ <div class="news-block">
+   <div class="news-block__items">
+      <% for (var newsList of newsLists) {%>
+      <article class="news-block__item">
+        <div class="news-block__category">
+          <%= newsList.category %>
+        </div><!-- /.news-block__category -->
+        <time class="news-block__date" datetime="<%= newsList.datetime %>">
+          <%= newsList.date %>
+        </time>
+        <h3 class="news-block__title">
+          <a href="">
+            <%= newsList.title %>
+          </a>
+        </h3>
+      </article>
+      <% } %>
+    </div><!-- /.new-block__items -->
+  </div><!-- /.news-block -->

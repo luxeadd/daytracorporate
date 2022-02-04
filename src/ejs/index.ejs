@@ -10,7 +10,7 @@
   
 
   <!-- about -->
-  <section class="top-about">
+  <section class="top-about top-about-layout">
     <div class="inner">
       <div class="top-about__flex ">
         <div class="top-about__title">
@@ -28,7 +28,7 @@
 
   
    <!-- service -->
-   <section class="top-service">
+   <section class="top-service top-service-layout">
     <div class="inner">
       <div class="top-service__flex ">
         <div class="top-service__title">
@@ -43,6 +43,45 @@
     </div><!-- /.top-service__flex -->
     </div><!-- /.inner -->
   </section><!-- /.top-service -->
+
+
+  <!-- case -->
+  <section class="top-case">
+    <div class="inner">
+      <div class="top-case__flex ">
+        <div class="top-case__title">
+          <%- include('./parts/_section-title--white',{title:'case study',text:'導入事例'}) %>
+        </div><!-- /.top-case__title -->
+      <div class="top-case__link">
+        <%- include('./parts/_view-more',{text:'View more',link:'#'}) %>
+      </div><!-- /.top-case__link -->
+      <div class="top-case__body">
+        <%- include('./parts/_case-block') %>
+      </div><!-- /.top-case__body -->
+    </div><!-- /.top-case__flex -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-case -->
+
+
+   <!-- news -->
+   <section class="top-news">
+    <div class="inner">
+      <div class="top-news__flex ">
+        <div class="top-news__title">
+          <%- include('./parts/_section-title',{title:'news',text:'新着情報'}) %>
+        </div><!-- /.top-news__title -->
+      <div class="top-news__link">
+        <%- include('./parts/_view-more--black',{text:'View more',link:'#'}) %>
+      </div><!-- /.top-news__link -->
+      <div class="top-news__body">
+        <%- include('./parts/_news-block') %>
+      </div><!-- /.top-news__body -->
+    </div><!-- /.top-news__flex -->
+    </div><!-- /.inner -->
+  </section><!-- /.top-news -->
+
+
+
 
   
   

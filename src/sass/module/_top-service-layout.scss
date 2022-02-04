@@ -1,0 +1,9 @@
+@use 'global' as * ; 
+
+.top-service-layout {
+  margin-top: rem(60);
+
+  @include mq(tab) {
+    margin-top: rem(121);
+  }
+}

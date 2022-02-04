@@ -1,0 +1,57 @@
+@use 'global' as * ; 
+
+.top-news{
+  padding: rem(60) 0 rem(209);
+  background: linear-gradient(11deg, #ffffff 0%, #ffffff 16%, #EDF3F8 16%, #EDF3F8 76%, #ffffff 76%);
+  position: relative;
+  @include mq(tab) {
+    background: linear-gradient(10deg, #ffffff 0%, #ffffff 11%, #EDF3F8 11%, #EDF3F8 44%, #ffffff 44%);
+    padding: rem(166) 0 rem(160);
+    
+  }
+} 
+
+
+
+
+.top-news__flex {
+  display: flex;
+  flex-direction: column;
+  @include mq(tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.top-news__title{
+  order: 1;
+  @include mq(tab) {
+    flex: 0 0 50%;
+    
+  }
+  
+}
+.top-news__link{
+  margin-top: rem(41);
+  order: 3;
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  @include mq(tab) {
+    order: 2;
+    margin-top: initial;
+    
+  }
+}
+.top-news__body{
+  margin-top: rem(67);
+  position: relative;
+  z-index: 2;
+  order: 2;
+  @include mq(tab) {
+    flex: 0 0 100%;
+    order: 3;
+    margin-top: rem(80);
+  }
+}

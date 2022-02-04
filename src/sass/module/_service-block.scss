@@ -160,12 +160,12 @@
    position: absolute;
    left: rem(-15);
    bottom: rem(33);
-   width: rem(260);
+   width: rem(310);
    
    @include mq(tab) {
      left: rem(-32);
      bottom: rem(34);
-     width: 85%;
+     width: rem(310);
    }
 
 }
