@@ -25,6 +25,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  transition: all .3s;
 
   @include mq(tab) {
     width: rem(51);
@@ -32,11 +33,16 @@
   }
 }
 
+.view-more:hover::before {
+  background: $color-accent;
+}
+
 .view-more__text {
   font-size: rem(20);
   font-family: $second-font-family;
   position: relative;
   color: $white;
+  width: 100%;
 
   @include mq(tab) {
     font-size: rem(32);
@@ -50,14 +56,22 @@
   height: rem(2);
   position: absolute;
   top: 55%;
-  right: rem(-75);
+  right: rem(20);
   background: $white;
+  transition: all .3s;
   
   @include mq(tab) {
     width: rem(94);
-    right: rem(-111);
+    right: rem(26);
   }
   
+}
+
+.view-more__text:hover:before {
+  @include mq(tab) {
+    width: rem(135);
+    right: rem(-15);
+  }
 }
 
 .view-more__text::after {
@@ -66,14 +80,22 @@
   width: rem(15);
   height: rem(2);
   position: absolute;
-  right: rem(-77);
+  right: rem(20);
   top: 40%;
   background: $white;
   transform: rotate(39deg);
+  transition: .3s;
   
   @include mq(tab) {
-    right: rem(-114);
+    right: rem(25);
     top: 45%;
+    
+  }
+}
+
+.view-more__text:hover:after {
+  @include mq(tab) {
+    right: rem(-15);
     
   }
 }

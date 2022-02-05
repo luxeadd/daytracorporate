@@ -1,0 +1,25 @@
+.js-mv-slider {
+  width: 100%;
+  height: 100%;
+  .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      //Prevスライド
+      .swiper-slide-prev,
+      //Activeスライド
+      .swiper-slide-active,
+      //ループ時に複製される正面のスライド
+      .swiper-slide-duplicate-active {
+          img {
+              animation-name: zoom;
+              animation-duration: 8s;
+              animation-fill-mode: forwards;
+          }
+      }
+  }
+}

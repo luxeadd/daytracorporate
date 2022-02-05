@@ -1,9 +1,27 @@
 <div class="top-mv">
-    <div class="top-mv__img">
-      <picture>
-        <source srcset="./images/common/top-mv.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
-        <img src="./images/common/top-mv-sp1.jpg" alt="MV画像">
-      </picture>
+    <div class="top-mv__img"><!-- ここでwidth heightを設定しておくこと -->
+      <div class="swiper js-mv-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/common/top-mv.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/top-mv-sp1.jpg" alt="MV画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/common/top-mv2.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/top-mv-sp2.jpg" alt="MV画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/common/top-mv3.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/top-mv-sp3.jpg" alt="MV画像">
+            </picture>
+          </div>
+        </div>
+      </div>
     </div><!-- /.top-mv__img -->
     <div class="top-mv__body">
       <h2 class="top-mv__title-en u-sp">

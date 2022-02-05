@@ -35,6 +35,34 @@ drawerMenuItem.addEventListener('click', () => {
 
 
 
+let slider1 = new Swiper ('.js-mv-slider', {
+  //自動スライド
+      autoplay: {
+        delay: 2000,
+      },
+   //切り替えエフェクトの指定
+    //slide  fade  cube coverflow  flip
+    effect: "fade",
+   
+    //切り替わる速さ
+    speed: 4000,
+    
+    //ループの有無
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+     el: '.swiper-pagination',
+      clickable : true,
+     },
+    
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+     },
+});
+
 
 
 

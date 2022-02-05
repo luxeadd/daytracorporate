@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+<body>
+  <!-- ヘッダー -->
+  <%- include('./common/_header') %>
+  
+  <!-- MV -->
+  <%- include('./common/_sub-mv',{
+    imgPc:' ./images/common/sub-about-mv.jpg ',
+    imgSp:' ./images/common/sub-about-mv-sp.jpg ',
+    alt:'当社について画像 ', 
+    title:'about us ', 
+    subtitle:'当社について '
+  }) %>
+  
+  <div class="sub-about">
+    <div class="inner">
+     <div class="sub-about__breadcrumb">
+       <!-- パンくず -->
+       <%- include('./common/_breadcrumb', {
+         navigationList: [
+      {
+        path: ' index.html ',
+        label: 'ホーム'
+      },
+      {
+        path: ' リンクパス ',
+        label: '当社について'
+      }
+      ]
+    }); %>
+  </div><!-- /.sub-about__breadcrumb -->
+    
+    
+  <%- include('./parts/_sub-about-top') %>
+  
+
+
+
+
+
+
+  </div><!-- /.inner -->
+</div><!-- /.sub-about -->
+
+<!-- ダウンロード・コンタクト -->
+<section class="download-contact">
+  <%- include('./common/_footer-top') %>
+</section><!-- /.download-contact -->
+
+<!-- フッター -->
+<%- include('./common/_footer') %>
+
+
+
+<div class="margin"></div><!-- /.margin -->
+  
+  <%- include('./parts/_btn',{text:' ダウンロード', link:'#'}) %>
+  <%- include('./parts/_btn-blue',{text:'無料ダウンロード',link:'#'}) %>
+  <%- include('./parts/_btn-arrow',{text:'無料ダウンロード',link:'#'}) %>
+  <%- include('./parts/_btn-yellow',{text:'無料ダウンロード',link:'#'}) %>
+  <%- include('./parts/_view-more',{text:'view-more',link:'#'}) %>
+  <%- include('./parts/_view-more--black',{text:'view-more',link:'#'}) %>
+  <%- include('./parts/_section-title',{title:'about us',text:'私たちについて'}) %>
+  <%- include('./parts/_section-title--white',{title:'about us',text:'私たちについて'}) %>
+  <%- include('./parts/_section-title--small',{title:'about us',text:'私たちについて'}) %>
+  
+  
+  </body>
+</html>
+

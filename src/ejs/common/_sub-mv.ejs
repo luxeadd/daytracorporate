@@ -1,0 +1,13 @@
+<div class="sub-mv">
+  <div class="sub-mv_block">
+    <div class="sub-mv__img">
+      <picture>
+        <source srcset="<%= imgPc %>" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+        <img src="<%= imgSp %> " alt="<%= alt %>" /><!-- それ以外で表示 -->
+      </picture>
+    </div><!-- /.sub-mv__img -->
+    <h1 class="sub-mv__title">
+      <span class="sub-mv__title--en" ><%= title %></span><br><span class="sub-mv__title--jp" ><%= subtitle %></span>
+    </h1><!-- /.sub-mv__title -->
+  </div><!-- /.sub-mv__block -->
+</div><!-- /.sub-mv -->

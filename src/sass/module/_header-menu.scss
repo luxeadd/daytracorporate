@@ -18,8 +18,13 @@
 .header-menu__item {
 height: inherit;
 position: relative;
-
+transition: all .3s;
 }
+
+.header-menu__item:hover {
+  color: $color-accent2;
+}
+
 
 .header-menu__item:not(:first-child)::before {
   content: "";
