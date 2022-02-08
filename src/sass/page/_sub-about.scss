@@ -1,0 +1,41 @@
+@use 'global' as * ; 
+
+.sub-about__breadcrumb {
+  margin-top: rem(12);
+}
+.sub-about__top{
+  margin-top: rem(60);
+
+  @include mq(tab) {
+    margin-top: rem(80);
+  }
+}
+.sub-about__explain{
+background: url(../images/common/sub-back.jpg) no-repeat center center / cover;
+ position: relative;
+ padding: rem(60) rem(20);
+ display: flex;
+ justify-content: center;
+}
+
+.sub-about__explain::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: $color-main-dark2, $alpha: 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.sub-about__staff{
+  padding: rem(60)0 rem(156);
+  background: linear-gradient(10deg, #ffffff 0%, #ffffff 8%, #EDF3F8 8%, #EDF3F8 52%, #ffffff 52%);
+  
+}
+.download-contact{
+}
+.margin{
+}
+

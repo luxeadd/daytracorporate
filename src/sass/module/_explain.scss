@@ -1,0 +1,61 @@
+@use 'global' as * ; 
+
+.explain {
+width: min(100%, rem(580));
+padding: rem(40) rem(20) ;
+position: relative;
+z-index: 2;
+background-color: $white;
+@include mq(tab) {
+  padding: rem(60) rem(40) rem(80);
+  width: min(100%, rem(768));
+   
+ }
+}
+
+.explain__title {
+  text-align: center;
+
+}
+
+.explain__blocks {
+  margin-top: rem(40);
+  
+  @include mq(tab) {
+    margin-top: rem(60);
+    
+  }
+
+}
+
+.explain__block {
+display: flex;
+align-items: center;
+
+}
+
+
+.explain__header {
+  width: rem(100); 
+  font-size: rem(14);
+  line-height: 1.7143;
+  padding: rem(16) 0 ;
+  border-bottom: 1px solid $color-main-dark2;
+}
+
+.explain__block:first-child {
+  .explain__header {
+    border-top: 1px solid $color-main-dark2;
+  }
+  .explain__description {
+    border-top: 1px solid $color-line;
+  }
+}
+
+.explain__description {
+  width: calc(100% - rem(100)) ;
+  font-size: rem(14);
+  padding: rem(16) rem(0) rem(16) rem(26)  ;
+  line-height: 1.7143;
+  border-bottom: 1px solid $color-line;
+}

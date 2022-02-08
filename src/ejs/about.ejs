@@ -14,34 +14,45 @@
     subtitle:'当社について '
   }) %>
   
+  <!-- パンくず -->
   <div class="sub-about">
     <div class="inner">
-     <div class="sub-about__breadcrumb">
-       <!-- パンくず -->
-       <%- include('./common/_breadcrumb', {
-         navigationList: [
-      {
-        path: ' index.html ',
-        label: 'ホーム'
-      },
-      {
-        path: ' リンクパス ',
-        label: '当社について'
-      }
-      ]
-    }); %>
-  </div><!-- /.sub-about__breadcrumb -->
-    
-    
-  <%- include('./parts/_sub-about-top') %>
-  
+      <div class="sub-about__breadcrumb">
+        <%- include('./common/_breadcrumb', {
+          navigationList: [
+          {
+            path: ' index.html ',
+            label: 'ホーム'
+          },
+          {
+            path: ' リンクパス ',
+            label: '当社について'
+          }
+          ]
+        }); %>
+      </div><!-- /.inner -->
+    </div><!-- /.sub-about__breadcrumb -->
+      
+      
+      <!-- mission.vision -->
+      <div class="sub-about__top">
+        <div class="inner">
+          <%- include('./parts/_sub-about-top') %>
+        </div><!-- /.inner -->
+      </div><!-- /.sub-about__top -->
 
+      <!-- 会社概要 -->
+      <div class="sub-about__explain">
+        <%- include('./parts/_explain') %>
+      </div><!-- /.sub-about__explain -->
 
-
-
-
-
-  </div><!-- /.inner -->
+      <!-- 役員紹介 -->
+      <div class="sub-about__staff">
+        <div class="inner">
+          <%- include('./parts/_staff-intro') %>
+        </div><!-- /.inner -->
+      </div><!-- /.sub-about__staff -->
+      
 </div><!-- /.sub-about -->
 
 <!-- ダウンロード・コンタクト -->
