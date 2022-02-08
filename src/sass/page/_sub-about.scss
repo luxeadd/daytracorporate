@@ -7,7 +7,7 @@
   margin-top: rem(60);
 
   @include mq(tab) {
-    margin-top: rem(80);
+    margin-top: rem(81);
   }
 }
 .sub-about__explain{
@@ -16,6 +16,10 @@ background: url(../images/common/sub-back.jpg) no-repeat center center / cover;
  padding: rem(60) rem(20);
  display: flex;
  justify-content: center;
+ 
+ @include mq(tab) {
+   padding: rem(86) rem(20) rem(76);
+ }
 }
 
 .sub-about__explain::before {
@@ -30,9 +34,20 @@ background: url(../images/common/sub-back.jpg) no-repeat center center / cover;
 
 }
 .sub-about__staff{
-  padding: rem(60)0 rem(156);
-  background: linear-gradient(10deg, #ffffff 0%, #ffffff 8%, #EDF3F8 8%, #EDF3F8 52%, #ffffff 52%);
+  padding: rem(60) 0 rem(152);
+  background: linear-gradient(10deg, #ffffff 0%, #ffffff 4%, #EDF3F8 4%, #EDF3F8 55%, #ffffff 55%);
   
+  @include mq(tab) {
+    padding: rem(120) 0 rem(184);
+    background: linear-gradient(10deg, #ffffff 0%, #ffffff 8%, #EDF3F8 8%, #EDF3F8 42%, #ffffff 42%);
+    
+  }
+  
+}
+
+.sub-about__staff-inner {
+  display: flex;
+  justify-content: center;
 }
 .download-contact{
 }

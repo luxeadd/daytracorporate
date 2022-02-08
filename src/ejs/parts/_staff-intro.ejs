@@ -43,9 +43,10 @@ const staffLists=[
           <img src="<%- staffList.img %>" alt="<%- staffList.alt %>" >
         </figure>
       </div><!-- /.staff-intro__header -->
-      <div class="staff-intro__body">
-        <p class="staff-intro__position"><%- staffList.position %></h3>
-        <p class="staff-intro__name"><%- staffList.name %></p>
+      <div class="staff-intro__block">
+        <div class="staff-intro__body">
+          <p class="staff-intro__position"><%- staffList.position %></h3>
+            <p class="staff-intro__name"><%- staffList.name %></p>
         <p class="staff-intro__text text-main"><%- staffList.text %></p><!-- /.staff-intro__text text-main -->
       </div><!-- /.staff-intro__body -->
       <div class="staff-intro__footer">
@@ -65,6 +66,7 @@ const staffLists=[
           </a>
         </div><!-- /.staff-intro__twitter -->
       </div><!-- /.staff-intro__footer -->
+    </div><!-- /.staff-intro__block -->
      </article>
      <% } %>
   </div><!-- /.staff-intro__items -->

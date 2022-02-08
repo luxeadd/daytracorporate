@@ -22,7 +22,7 @@ background-color: $white;
   margin-top: rem(40);
   
   @include mq(tab) {
-    margin-top: rem(60);
+    margin-top: rem(58);
     
   }
 
@@ -30,22 +30,35 @@ background-color: $white;
 
 .explain__block {
 display: flex;
-align-items: center;
+align-items: stretch;
 
 }
+
 
 
 .explain__header {
   width: rem(100); 
   font-size: rem(14);
   line-height: 1.7143;
-  padding: rem(16) 0 ;
+  padding: rem(14) 0 ;
   border-bottom: 1px solid $color-main-dark2;
+  display: flex;
+  align-items: center;
+  
+  @include mq(tab) {
+    font-size: rem(16);
+    width: rem(200); 
+    line-height: 1.5;
+    padding: rem(24) 0 rem(24) rem(32) ;
+    
+    
+  }
 }
 
 .explain__block:first-child {
   .explain__header {
     border-top: 1px solid $color-main-dark2;
+  
   }
   .explain__description {
     border-top: 1px solid $color-line;
@@ -55,7 +68,16 @@ align-items: center;
 .explain__description {
   width: calc(100% - rem(100)) ;
   font-size: rem(14);
-  padding: rem(16) rem(0) rem(16) rem(26)  ;
-  line-height: 1.7143;
+  padding: rem(14) rem(0) rem(14) rem(26)  ;
+  line-height: 1.55;
   border-bottom: 1px solid $color-line;
+  word-wrap: break-word;
+  
+  @include mq(tab) {
+    width: calc(100% - rem(200)) ;
+    font-size: rem(16);
+    line-height: 1.5;
+    padding: rem(24) 0 rem(24) rem(36) ;
+    
+  }
 }
