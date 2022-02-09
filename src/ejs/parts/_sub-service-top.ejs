@@ -1,0 +1,49 @@
+<% const serviceLists=[
+  {
+    img:"./images/common/top-service1.jpg" ,
+    alt:" " ,
+    titleJp:"ビジネス英語研修 " ,
+    titleEn:"Business English Training " ,
+    text:" ビジネス英会話はこれからの時代、すべてのビジネスパーソンが学ぶべき必須スキルと考えおります。<br>海外にビジネス展開する際にはもちろんのこと、日本国内でも英会話コミュニケーションができることによってチャンスが掴める場面があります。" ,
+    dt:"対象 " ,
+    dd:"ビジネスの中で使える英語コミュニケーション能力が必要な方 " ,
+    
+  },
+ ] %>
+ 
+
+ <div class="sub-service-top">
+   <div class="inner">
+     <div class="sub-service-top__items">
+          <% for (var serviceList of serviceLists) {%>
+          <div class="sub-service-top__item">
+            <div class="sub-service-top__head">
+              <div class="sub-service-top__img">
+                <img src="<%= serviceList.img %>" alt="<%= serviceList.alt %>">
+              </div><!-- /.sub-service-top__img -->
+            </div><!-- /.sub-service-top__head -->
+            <div class="sub-service-top__body">
+              <div class="sub-service-top__title">
+                <h2 class="sub-service-top__title-jp" ><%= serviceList.titleJp %></h2>
+                <small class="sub-service-top__title-en" ><%= serviceList.titleEn %></small>
+              </div><!-- /.sub-service-top__title -->
+               <div class="sub-service-top__text-box">
+                 <p class="sub-service-top__text"><%- serviceList.text %></p><!-- /.sub-service-top__text -->
+               </div><!-- /.sub-service-top__text-box -->
+               <dl class="sub-service-top__footer">
+                  <div class="sub-service-top__footer-item">
+                    <dt class="sub-service-top__dt"><%= serviceList.dt %></dt><!-- /.sub-service-top__dt -->
+                    <dd class="sub-service-top__dd"><%= serviceList.dd %></dd><!-- /.sub-service-top__dd -->
+                  </div><!-- /.sub-service-top__footer-item -->
+               </dl><!-- /.sub-service-top__footer -->
+               <div class="sub-service-top__btn">
+                <%- include('../parts/_btn-arrow',{text:'無料ダウンロード',link:'#'}) %>
+               </div><!-- /.sub-service-top__btn -->
+            </div><!-- /.sub-service-top__body -->
+          </div><!-- /.sib-service-top__item -->
+          <% } %>
+        </div><!-- /.sub-service-top__items -->
+      </div><!-- /.inner -->
+    </div><!-- /.sub-service-top -->
+    
+
