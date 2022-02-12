@@ -1,0 +1,28 @@
+@use 'global' as * ; 
+
+.cards {
+
+}
+
+.cards__item  + .cards__item{
+  margin-top: rem(20);
+
+}
+
+.cards__item:nth-child(1),
+.cards__item:nth-child(2) {
+  .card__category {
+    position: relative;
+  }
+  .card__category::after {
+    content: "NEW";
+    display: block;
+    font-size: rem(14);
+    color: $color-accent2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(-42);
+
+  }
+}

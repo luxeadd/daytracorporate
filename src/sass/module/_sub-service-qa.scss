@@ -1,0 +1,105 @@
+@use 'global' as * ; 
+
+.sub-service-qa *, .sub-service-qa *:after, .sub-service-qa *:before {
+	-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sub-service-qa {
+  overflow-x: hidden;
+	margin-left: auto;
+  margin-right: auto;
+	
+}
+.sub-service-qa__item {
+  padding: 0;
+	border-bottom: 1px dotted #cccccc;
+  position: relative;
+  border-bottom: 1px solid $color-line;
+ 
+}
+.sub-service-qa__item:first-child {
+  border-top: 1px solid $color-line;
+}
+
+.sub-service-qa__label {
+ font-size: rem(16);
+ font-weight: $bold;
+ position: relative;
+ display: block;
+ width: 100%;
+ margin: 0;
+ padding: rem(16) 0;
+ padding-right: rem(72);
+ cursor: pointer;
+ 
+ @include mq(tab) {
+   font-size: rem(20);
+   padding: rem(32) 0;
+   
+ }
+}
+
+.sub-service-qa__label:active {
+  color: $color-caution;
+}
+
+.sub-service-qa__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: rem(21);
+  height: rem(2);
+  background-color: $black;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(10);
+  transition: 0.2s ease;
+}
+.sub-service-qa__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: rem(2);
+  height: rem(21);
+  background-color: $black;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(20);
+  transition: 0.2s ease;
+}
+
+
+.sub-service-qa__item-content {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	-webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+	opacity: 0;
+  background-color: $white;
+  
+  @include mq(tab) {
+    padding: 0  rem(32) ;
+    
+  }
+}
+.sub-service-qa__item input[type=checkbox]:checked ~ .sub-service-qa__label {
+  color: $color-caution;
+}
+.sub-service-qa__item input[type=checkbox]:checked ~ .sub-service-qa__item-content {
+	height: auto;
+	padding-bottom: rem(16);
+	opacity: 1;
+}
+
+.sub-service-qa__item input[type=checkbox]:checked ~  .sub-service-qa__label::before {
+	transform: translateY(-50%) rotate(225deg);
+  background-color: $color-caution;
+}
+.sub-service-qa__item input[type=checkbox]:checked ~  .sub-service-qa__label::after {
+	transform: translateY(-50%) rotate(45deg);
+  background-color: $color-caution;
+}
+.sub-service-qa__item input[type=checkbox] {
+  display: none;
+}

@@ -1,0 +1,206 @@
+@use 'global' as * ; 
+
+.sub-service-flow{
+  
+  
+}
+
+
+.suv-service-flow__title{
+  position: relative;
+  z-index: 2;
+  color: $white;
+  font-size: rem(24);
+  font-weight: $bold;
+  text-align: center;
+}
+.sub-service-flow__items{
+  position: relative;
+  z-index: 2;
+  margin-top: rem(40);
+
+  @include mq(tab) {
+    display: flex;
+    margin-top: rem(60);
+    
+
+  }
+
+}
+.sub-service-flow__item{
+ display: flex;
+ align-items: center;
+ flex: 0 0 25%;
+
+ @include mq(tab) {
+   display: block;
+  //  height: 100%;
+ }
+
+
+}
+.sub-service-flow__head{
+  color: $color-accent;
+  padding-bottom: rem(24.4);
+  font-family: $second-font-family;
+  
+  @include mq(tab) {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: rem(5);
+  }
+
+  
+
+}
+.sub-service-flow__step{
+  font-size: rem(20);
+  font-family: $second-font-family;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+}
+.sub-service-flow__number{
+  font-size: rem(40);
+  line-height: 1.2;
+
+  @include mq(tab) {
+    line-height: 1;
+    margin-left: rem(8);
+  }
+
+}
+.sub-service-flow__body{
+  margin-left: rem(16);
+  position: relative;
+  @include mq(tab) {
+    margin-left: initial;
+    height: 80%;
+  }
+  
+  
+}
+
+.sub-service-flow__item:not(:first-child) {
+  .sub-service-flow__body {
+    clip-path: polygon(50% 12%, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: rem(-28.4);
+
+    @include mq(tab) {
+      margin-top: initial;
+      clip-path: none;
+      padding: rem(46) rem(25.4) rem(22) rem(50);
+    }
+    
+  }
+}
+
+.sub-service-flow__item:not(:last-child) {
+  .sub-service-flow__body::after {
+     content: "";
+     @include mq(tab) {
+       
+       display: block;
+       width: rem(22);
+       height: 100%;
+       background: $color-back;
+       position: absolute;
+       right: rem(-19);
+       top: 0;
+       z-index: 2;
+       clip-path: polygon(15% 0, 100% 50%, 15% 100%, 0 100%, 0 0);
+      }
+  }
+}
+
+.sub-service-flow__item:nth-child(1) {
+  .sub-service-flow__body {
+    background: $color-back;
+    padding: rem(22) rem(20) rem(48.4);
+
+    @include mq(tab) {
+      clip-path: none;
+      padding: rem(46) rem(25.4) rem(22) rem(50);
+       
+    }
+    
+  }
+}
+.sub-service-flow__item:nth-child(2) {
+  .sub-service-flow__body {
+    background: #DDE8F0;
+    padding: rem(40) rem(20) rem(48.4);
+    
+    @include mq(tab) {
+      padding: rem(46) rem(25.4) rem(22) rem(50);
+    }
+    
+  }
+  .sub-service-flow__body::after {
+    background: #DDE8F0;
+
+  }
+}
+.sub-service-flow__item:nth-child(3) {
+  .sub-service-flow__body {
+    background: #C7DBE9;
+    padding: rem(40) rem(20) rem(48.4);
+    @include mq(tab) {
+      padding: rem(46) rem(25.4) rem(22) rem(50);
+    }
+    
+  }
+  .sub-service-flow__body::after {
+    background: #C7DBE9;
+
+  }
+}
+.sub-service-flow__item:nth-child(4) {
+  .sub-service-flow__body {
+    background: #B0D0E5;
+    padding: rem(40) rem(20) rem(22);
+    @include mq(tab) {
+      padding: rem(46) rem(25.4) rem(22) rem(50);
+    }
+    
+  }
+  .sub-service-flow__body::after {
+    background: #B0D0E5;
+
+  }
+}
+
+
+.sub-service-flow__sub-title{
+  font-size: rem(18);
+  font-weight: $bold;
+  line-height: 1.4444;
+  color: $color-main-dark2;
+  text-align: center;
+
+  @include mq(tab) {
+    font-size: rem(20);
+    text-align: left;
+
+  }
+}
+.sub-service-flow__text{
+  margin-top: rem(9);
+
+  @include mq(tab) {
+    margin-top: rem(20);
+
+  }
+
+}
+.sub-service-flow__text2{
+  color: $color-caution;
+  display: none;
+}
+
+.sub-service-flow__item:last-child {
+  .sub-service-flow__text2 {
+    display: block;
+  }
+}
+

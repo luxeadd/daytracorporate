@@ -1,0 +1,102 @@
+<% const cardLists=[
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+  {
+    link:'  ',
+    img:'./images/common/sub-news-item.jpg ',
+    time:'2021.01.01 ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    category:' カテゴリ ',
+    
+  },
+ 
+ ] %>
+ 
+
+ <div class="cards">
+     <div class="cards__items">
+          <% for (var cardList of cardLists) {%>
+          <div class="cards__item">
+            <%- include('../parts/_card' , {
+              link: cardList.link ,
+              img: cardList.img ,
+              time: cardList.time ,
+              title: cardList.title ,
+              category: cardList.category ,
+            }) %>
+          </div><!-- /.cards__item -->
+          <% } %>
+        </div><!-- /.cards__items -->
+    </div><!-- /.cards -->
+    
+
