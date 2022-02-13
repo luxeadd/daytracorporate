@@ -17,7 +17,7 @@
   <!-- パンくず -->
   <div class="sub-news">
     <div class="inner">
-      <div class="sub-about__breadcrumb">
+      <div class="sub-news__breadcrumb sub-breadcrumb">
         <%- include('./common/_breadcrumb', {
           navigationList: [
           {
@@ -25,50 +25,47 @@
             label: 'ホーム'
           },
           {
-            path: ' リンクパス ',
-            label: 'サービス'
+            path: '  ',
+            label: 'ニュース'
           }
           ]
         }); %>
       </div><!-- /.inner -->
     </div><!-- /.sub-about__breadcrumb -->
       
-    <section class="sub-news__top">
-     <div class="inner">
-       <%- include('./parts/_cards') %>
 
-     </div><!-- /.inner -->
-    </section><!-- /.sub-news__top -->
+    <div class="sub-news___body">
+      <div class="inner sub-news__inner">
 
-    <aside class="sub-news__aside">
-    </aside><!-- /.sub-news__aside -->
-   
+        <section class="sub-news__top">
+           <h2 class="sub-news__top-title sub-news-title">カテゴリ</h2><!-- /.sub-news__top-title sub-title -->
+           <div class="sub-news__top-body">
+             <%- include('./parts/_cards' , {number : '10'}) %>
+           </div><!-- /.sub-news__top-body -->
+
+           <div class="sub-news__pagination">
+             <%- include('./common/_pagination') %>
+           </div><!-- /.sub-news__pagination -->
+
+        </section><!-- /.sub-news__top -->
+        
+        
+        <aside class="sub-news__aside">
+          <%- include('./common/_news-aside') %>
+        </aside><!-- /.sub-news__aside -->
+        
+      </div><!-- /.inner -->
+      </div><!-- /.sub-news___body -->
+      
+  
     
-   
-   
-
-<!-- ダウンロード・コンタクト -->
+    <!-- ダウンロード・コンタクト -->
 <section class="download-contact">
   <%- include('./common/_footer-top') %>
 </section><!-- /.download-contact -->
 
 <!-- フッター -->
 <%- include('./common/_footer') %>
-
-
-
-<div class="margin"></div><!-- /.margin -->
-  
-  <%- include('./parts/_btn',{text:' ダウンロード', link:'#'}) %>
-  <%- include('./parts/_btn-blue',{text:'無料ダウンロード',link:'#'}) %>
-  <%- include('./parts/_btn-arrow',{text:'無料ダウンロード',link:'#'}) %>
-  <%- include('./parts/_btn-yellow',{text:'無料ダウンロード',link:'#'}) %>
-  <%- include('./parts/_view-more',{text:'view-more',link:'#'}) %>
-  <%- include('./parts/_view-more--black',{text:'view-more',link:'#'}) %>
-  <%- include('./parts/_section-title',{title:'about us',text:'私たちについて'}) %>
-  <%- include('./parts/_section-title--white',{title:'about us',text:'私たちについて'}) %>
-  <%- include('./parts/_section-title--small',{title:'about us',text:'私たちについて'}) %>
-  
   
   </body>
 </html>

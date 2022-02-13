@@ -1,0 +1,19 @@
+@use 'global' as * ; 
+
+.case-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: rem(54);
+  
+  @include mq(tab) {
+    grid-template-columns:repeat(2 , 1fr) ;
+    grid-gap: rem(66) rem(80);
+   
+    
+  }
+
+}
+
+.case-items__item {
+}

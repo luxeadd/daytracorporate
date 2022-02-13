@@ -7,17 +7,17 @@
   
   <!-- MV -->
   <%- include('./common/_sub-mv',{
-    imgPc:' ./images/common/sub-about-mv.jpg ',
-    imgSp:' ./images/common/sub-about-mv-sp.jpg ',
-    alt:'当社について画像 ', 
-    title:'about us ', 
-    subtitle:'当社について '
+    imgPc:' ./images/common/sub-news-mv.jpg ',
+    imgSp:' ./images/common/sub-news-mv-sp.jpg ',
+    alt:'サービス画像 ', 
+    title:'news ', 
+    subtitle:'お知らせ '
   }) %>
   
   <!-- パンくず -->
-  <div class="sub-about">
+  <div class="sub-news-detail">
     <div class="inner">
-      <div class="sub-about__breadcrumb sub-breadcrumb">
+      <div class="sub-news-datail__breadcrumb sub-breadcrumb">
         <%- include('./common/_breadcrumb', {
           navigationList: [
           {
@@ -25,37 +25,38 @@
             label: 'ホーム'
           },
           {
+            path: ' news.html ',
+            label: 'ニュース'
+          },
+          {
             path: '  ',
-            label: '当社について'
+            label: 'ニュース詳細'
           }
           ]
         }); %>
       </div><!-- /.inner -->
     </div><!-- /.sub-about__breadcrumb -->
       
+
+    <div class="sub-news-detail___body">
+      <div class="inner sub-news-detail__inner">
+
+        <section class="sub-news-detail__top">
+          <%- include('./parts/_news-detail') %>
+          
+        </section><!-- /.sub-news__top -->
+        
+        
+        <aside class="sub-news-detail__aside">
+          <%- include('./common/_news-aside') %>
+        </aside><!-- /.sub-news__aside -->
+      </div><!-- /.inner -->
+      </div><!-- /.sub-news___body -->
       
-      <!-- mission.vision -->
-      <div class="sub-about__top">
-        <div class="inner">
-          <%- include('./parts/_sub-about-top') %>
-        </div><!-- /.inner -->
-      </div><!-- /.sub-about__top -->
-
-      <!-- 会社概要 -->
-      <div class="sub-about__explain">
-        <%- include('./parts/_explain') %>
-      </div><!-- /.sub-about__explain -->
-
-      <!-- 役員紹介 -->
-      <div class="sub-about__staff">
-        <div class="inner sub-about__staff-inner">
-          <%- include('./parts/_staff-intro') %>
-        </div><!-- /.inner -->
-      </div><!-- /.sub-about__staff -->
-      
-</div><!-- /.sub-about -->
-
-<!-- ダウンロード・コンタクト -->
+    
+    
+    
+    <!-- ダウンロード・コンタクト -->
 <section class="download-contact">
   <%- include('./common/_footer-top') %>
 </section><!-- /.download-contact -->

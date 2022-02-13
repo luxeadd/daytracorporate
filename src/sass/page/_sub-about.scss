@@ -1,8 +1,9 @@
 @use 'global' as * ; 
 
 .sub-about__breadcrumb {
-  margin-top: rem(12);
-}
+  font-size: rem(12);
+  
+} 
 .sub-about__top{
   margin-top: rem(60);
 

@@ -1,0 +1,16 @@
+@use 'global' as * ; 
+
+.sub-case{
+}
+
+.sub-about__breadcrumb{
+}
+.sub-case__top{
+  margin-top: rem(60);
+
+  @include mq(tab) {
+    margin-top: rem(80);
+
+  }
+}
+

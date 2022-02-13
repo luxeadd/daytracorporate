@@ -1,0 +1,81 @@
+<% const caseLists=[
+  {
+    titleSmall:'Webマーケティング事業 ', 
+    titleMain:'AAA株式会社 ',
+    img:'./images/common/case1.jpg ', 
+    alt:' AAA株式会社様画像',
+    corse:' 研修コース', 
+    category:' ビジネス英語研修',
+    subTitle1:'研修の目的 ', 
+    text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+    subTitle2:'選んだ理由 ', 
+    text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+    subTitle3:' 導入後の成果・効果', 
+    text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+  },
+  {
+    titleSmall:'Webマーケティング事業 ', 
+    titleMain:'AAA株式会社 ',
+    img:'./images/common/case1.jpg ', 
+    alt:' AAA株式会社様画像',
+    corse:' 研修コース', 
+    category:' ビジネス英語研修',
+    subTitle1:'研修の目的 ', 
+    text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+    subTitle2:'選んだ理由 ', 
+    text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+    subTitle3:' 導入後の成果・効果', 
+    text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+  },
+  {
+    titleSmall:'Webマーケティング事業 ', 
+    titleMain:'AAA株式会社 ',
+    img:'./images/common/case1.jpg ', 
+    alt:' AAA株式会社様画像',
+    corse:' 研修コース', 
+    category:' ビジネス英語研修',
+    subTitle1:'研修の目的 ', 
+    text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+    subTitle2:'選んだ理由 ', 
+    text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+    subTitle3:' 導入後の成果・効果', 
+    text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+  },
+  {
+    titleSmall:'Webマーケティング事業 ', 
+    titleMain:'AAA株式会社 ',
+    img:'./images/common/case1.jpg ', 
+    alt:' AAA株式会社様画像',
+    corse:' 研修コース', 
+    category:' ビジネス英語研修',
+    subTitle1:'研修の目的 ', 
+    text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+    subTitle2:'選んだ理由 ', 
+    text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+    subTitle3:' 導入後の成果・効果', 
+    text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+  },
+ 
+ ] %>
+
+ <div class="case-items">
+   <% for (var caseList of caseLists) {%>
+    <div class="case-items__item">
+      <%- include('../parts/_case-item',{
+        titleSmall: caseList.titleSmall, 
+        titleMain: caseList.titleMain,
+        img: caseList.img, 
+        alt: caseList.alt,
+        corse: caseList.corse, 
+        category: caseList.category,
+        subTitle1: caseList.subTitle1, 
+        text1: caseList.text1,
+        subTitle2: caseList.subTitle2, 
+        text2: caseList.text2,
+        subTitle3: caseList.subTitle3, 
+        text3: caseList.text3,
+}) %>
+</div><!-- /.case-items__item -->  
+
+<% } %>
+</div><!-- /.case-items -->

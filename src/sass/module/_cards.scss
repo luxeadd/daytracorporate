@@ -5,24 +5,18 @@
 }
 
 .cards__item  + .cards__item{
-  margin-top: rem(20);
+  margin-top: rem(17);
+
+  @include mq(tab) {
+    margin-top: rem(35);
+  }
 
 }
+.cards__item.cards__item--aside  + .cards__item.cards__item--aside{
+  margin-top: rem(17);
 
-.cards__item:nth-child(1),
-.cards__item:nth-child(2) {
-  .card__category {
-    position: relative;
+  @include mq(tab) {
+    margin-top: rem(12);
   }
-  .card__category::after {
-    content: "NEW";
-    display: block;
-    font-size: rem(14);
-    color: $color-accent2;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: rem(-42);
 
-  }
 }

@@ -1,0 +1,164 @@
+@use 'global' as * ; 
+
+.case-item{
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba($color: #000000, $alpha: 0.16);
+ 
+}
+.case-item__header{
+  background: $color-main-dark2;
+  color: $white;
+  padding: rem(18) rem(20);
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  
+  @include mq(tab) {
+    padding: rem(18) rem(40);
+    
+  }
+
+}
+.case-item__title{
+ display: inline-block;
+ line-height: 1;
+
+ @include mq(tab) {
+   line-height: 1.5;
+ }
+}
+
+.case-item__title span {
+  display: inline-block;
+  font-weight: $bold;
+
+}
+
+.case-item__title span:nth-child(1) {
+  font-size: rem(12);
+  width: 100%;
+  
+  @include mq(tab) {
+    font-size: rem(14);
+  }
+}
+.case-item__title span:nth-child(2) {
+  font-size: rem(16);
+
+  @include mq(tab) {
+    font-size: rem(24);
+  }
+ 
+}
+
+.case-item__title span:nth-child(3) {
+  font-size: rem(14);
+ vertical-align: bottom;
+
+ @include mq(tab) {
+   font-size: rem(16);
+ }
+  
+}
+
+.case-item__img{
+  width: rem(98);
+  height: rem(68);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(20);
+
+  @include mq(tab) {
+    width: rem(160);
+    height: rem(120);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba($color: #000000, $alpha: 0.16);
+  }
+
+}
+
+.case-item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include mq(tab) {
+    border-radius: 12px;
+  }
+}
+.case-item__body{
+  padding: rem(20);
+  border-radius: 0 0 12px 12px;
+  
+  @include mq(tab) {
+    padding: rem(34)rem(40)rem(40)rem(40) ;
+    
+  }
+}
+.case-item__body-head{
+  display: flex;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1.5;
+  border-bottom: 1px solid $color-line;
+  padding-bottom: rem(10);
+ 
+}
+.case-item__corse{
+position: relative;
+}
+.case-item__corse::after {
+  content: ":";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(-15);
+}
+
+.case-item__category{
+  margin-left: rem(30);
+}
+.case-item__subtitle{
+  margin-top: rem(32);
+  padding-left: rem(25);
+  position: relative;
+  font-size: rem(16);
+  
+  @include mq(tab) {
+    font-size: rem(18);
+    padding-left: rem(30);
+
+  }
+}
+
+.case-item__subtitle::before {
+  content: "";
+  display: block;
+  width: rem(15.5);
+  height: rem(15.5);
+  background: url(../images/common/icon-check-red.svg) no-repeat center center / cover;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include mq(tab) {
+    width: rem(20);
+    height: rem(20);
+
+  }
+
+}
+
+.case-item__subtitle:first-of-type {
+ margin-top: rem(20);
+
+ @include mq(tab) {
+   margin-top: rem(32);
+ }
+}
+.case-item__text{
+  margin-top: rem(8);
+
+}

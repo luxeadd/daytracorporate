@@ -1,0 +1,35 @@
+@use 'global' as * ; 
+.news-aside {
+
+}
+.news-aside__news{
+}
+.news-aside__news-title.sub-news-title{
+  @include mq(tab) {
+    font-size: rem(20);
+  }
+}
+.news-aside__news-body{
+  margin-top: rem(20);
+  
+  @include mq(tab) {
+    margin-top: rem(16);
+    
+  }
+}
+.news-aside__category{
+  margin-top: rem(60);
+
+  @include mq(tab) {
+    margin-top: rem(70);
+
+  }
+}
+.news-aside__category-title.sub-news-title{
+  @include mq(tab) {
+    font-size: rem(20);
+  }
+}
+.news-aside__category-body{
+  margin-top: rem(16);
+}

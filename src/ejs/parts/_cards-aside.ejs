@@ -3,7 +3,7 @@
     link:' news-detail.html ',
     img:'./images/common/sub-news-item.jpg ',
     time:'2021.01.01 ',
-    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じることで、自走・自… ',
+    title:'常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じ… ',
     category:' カテゴリ ',
     
   },
@@ -15,8 +15,8 @@
      <div class="cards__items">
       <% for (var i=0; i < number; i++) { %>
           <% for (var cardList of cardLists) {%>
-          <div class="cards__item">
-            <%- include('../parts/_card' , {
+          <div class="cards__item cards__item--aside">
+            <%- include('../parts/_card-aside' , {
               link: cardList.link ,
               img: cardList.img ,
               time: cardList.time ,
