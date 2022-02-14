@@ -1,90 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta name="robots" content="noindex" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title>Grobal Standard</title>
-  <meta name="description" content="世界で活躍できるグローバルな人材を育てる" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <meta name="twitter:card" content="summary" />
-  <!-- ファビコン -->
-  <link rel="icon" href="#" />
-  <!-- googleフォント -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Noto+Sans+JP:wght@500;700&display=swap" rel="stylesheet">
-  <!-- css -->
-  <link rel="stylesheet" href="./css/styles.css" />
-  <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.js"></script>
-</head>
-<body>
-  <!-- ヘッダー -->
-  <header class="l-header header js-header">
-    <div class="header__inner">
-      <!-- ヘッダーロゴ -->
-      <div class="header__logo">
-        <a href="/">
-          <img class="logo" src="./images/common/logo.svg" alt="Grobal Standard">
-        </a>
-      </div><!-- /.header__logo -->
-      <!-- ドロワーアイコン  -->
-      <button type="button" id="js-hamburger" class="header__drawer hamburger" aria-controls="js-drawer-menu" aria-expanded="false" area-label="メニューを開閉する">
-        <span class="hamburger__line"></span>
-      </button>
-      <!-- ドロワーメニュー -->
-      <div class=" header__drawer-menu  drawer-menu" id="js-drawer-menu" area-hidden="true">
-        <ul class="drawer-menu__items">
-          <li id="js-drawer-menu__item" class="drawer-menu__item  "><a href="index.html">トップ</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="about.html">当社について</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="service.html">サービス</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="case.html">導入事例</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__item"><a href="news.html">お知らせ</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__download"><a href="download.html">資料ダウンロード</a></li>
-          <li id="js-drawer-menu__item" class="drawer-menu__contact"><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </div><!-- /.sheader-menu -->
-      <!-- pcーメニュー -->
-      <nav class="header__pc-menu header-menu ">
-        <ul class="header-menu__items">
-          <li class="header-menu__item"><a href="index.html">トップ</a></li><!-- /.pc-menu__item -->
-          <li class="header-menu__item"><a href="about.html">当社について</a></li><!-- /.pc-menu__item -->
-          <li class="header-menu__item"><a href="service.html">サービス</a></li><!-- /.pc-menu__item -->
-          <li class="header-menu__item"><a href="case.html">導入事例</a></li><!-- /.pc-menu__item -->
-          <li class="header-menu__item"><a href="news.html">お知らせ</a></li><!-- /.pc-menu__item -->
-          <li class="header-menu__download">
-            <a href="download.html" class="btn">無料ダウンロード</a><!-- /.btn -->
-          </li><!-- /.header-menu__download -->
-          <li class="header-menu__contact">
-            <a href="contact.html" class="btn btn--blue">お問い合わせ</a><!-- /.btn -->
-          </li><!-- /.header-menu__download -->
-        </ul><!-- /.pc-menu__items -->
-      </nav><!-- /.header__menu -->
-      <!-- ドロワーメニュー展開時背景 -->
-      <div class="header__overlay" id="js-header__overlay"></div>
-    </div><!-- /.header__inner -->
-  </header>
-  <!-- MV -->
+<?php get_header(); ?>
+ 
+ 
+ <!-- MV -->
   <div class="sub-mv">
     <div class="sub-mv_block">
       <div class="sub-mv__img">
         <picture>
-          <source srcset=" ./images/common/sub-service-mv.jpg " media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-          <img src=" ./images/common/sub-service-mv-sp.jpg  " alt="サービス画像 " /><!-- それ以外で表示 -->
+          <source srcset=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-service-mv.jpg " media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+          <img src=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-service-mv-sp.jpg  " alt="サービス画像 " /><!-- それ以外で表示 -->
         </picture>
       </div><!-- /.sub-mv__img -->
       <h1 class="sub-mv__title">
@@ -117,7 +40,7 @@
               <div class="sub-service-top__item">
                 <div class="sub-service-top__head">
                   <div class="sub-service-top__img">
-                    <img src="./images/common/top-service1.jpg" alt="ビジネス英語研修 ">
+                    <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service1.jpg" alt="ビジネス英語研修 ">
                   </div><!-- /.sub-service-top__img -->
                 </div><!-- /.sub-service-top__head -->
                 <div class="sub-service-top__body">
@@ -148,7 +71,7 @@
               <div class="sub-service-top__item">
                 <div class="sub-service-top__head">
                   <div class="sub-service-top__img">
-                    <img src="./images/common/top-service2.jpg" alt="異文化コミュニケーション ">
+                    <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service2.jpg" alt="異文化コミュニケーション ">
                   </div><!-- /.sub-service-top__img -->
                 </div><!-- /.sub-service-top__head -->
                 <div class="sub-service-top__body">
@@ -179,7 +102,7 @@
               <div class="sub-service-top__item">
                 <div class="sub-service-top__head">
                   <div class="sub-service-top__img">
-                    <img src="./images/common/top-service3.jpg" alt="ビジネス留学プログラム ">
+                    <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service3.jpg" alt="ビジネス留学プログラム ">
                   </div><!-- /.sub-service-top__img -->
                 </div><!-- /.sub-service-top__head -->
                 <div class="sub-service-top__body">
@@ -304,55 +227,6 @@
         </div><!-- /.sub-service__qa-block -->
       </div><!-- /.inner -->
     </section><!-- /.sub-service__top -->
-    <!-- ダウンロード・コンタクト -->
-    <section class="download-contact">
-      <div class="footer-top">
-        <div class="footer-top__body">
-          <div class="footer-top__title">
-            <div class="section-title section-title--small">
-              <h2 class="section-title__en section-title__en--small">download</h2><!-- /.section-title__title -->
-              <p class="section-title__jp section-title__jp--small">資料ダウンロード</p><!-- /.section-title__title -->
-            </div><!-- /.section-title -->
-          </div><!-- /.footer-top__title -->
-          <div class="footer-top__btn">
-            <a href="download.html" class="btn btn--yellow">View more</a><!-- /.btn -->
-          </div><!-- /.footer-top__btn -->
-        </div><!-- /.footer-top__body -->
-        <div class="footer-top__body">
-          <div class="footer-top__title">
-            <div class="section-title section-title--small">
-              <h2 class="section-title__en section-title__en--small">contact</h2><!-- /.section-title__title -->
-              <p class="section-title__jp section-title__jp--small">お問い合わせ</p><!-- /.section-title__title -->
-            </div><!-- /.section-title -->
-          </div><!-- /.footer-top__title -->
-          <div class="footer-top__btn">
-            <a href=" contact.html " class="btn btn--yellow">View more</a><!-- /.btn -->
-          </div><!-- /.footer-top__btn -->
-        </div><!-- /.footer-top__body -->
-      </div><!-- /.download-contact -->
-    </section><!-- /.download-contact -->
-    <!-- フッター -->
-    <footer class="footer">
-      <div class="inner">
-        <div class="footer__logo">
-          <img src="./images/common/logo-white.svg" alt="global Standard">
-        </div><!-- /.footer__logo -->
-        <div class="footer__meta">
-          <div class="footer__text text-main">
-            <div class="footer__text-left"> 〒550-1000 </div><!-- /.footer__text-left -->
-            <div class="footer__text-right"> 大阪市西区土佐堀9-5-5</div><!-- /.footer__text-right -->
-          </div><!-- /.footer__text text-main -->
-          <dl class="footer__text text-main">
-            <dt class="footer__text-left"> TEL </dt><!-- /.footer__text-left -->
-            <dd class="footer__text-right"> 06-123-4567</dd><!-- /.footer__text-right -->
-          </dl><!-- /.footer__text text-main -->
-          <dl class="footer__text text-main">
-            <dt class="footer__text-left "> FAX </dt><!-- /.footer__text-left -->
-            <dd class="footer__text-right"> 06-123-4568</dd><!-- /.footer__text-right -->
-          </dl><!-- /.footer__text text-main -->
-        </div><!-- /.footer__meta -->
-        <div class="footer__copy">&copy;2021 Global Standard. All Rights Reserved.</div><!-- /.footer__copy -->
-      </div><!-- /.inner -->
-    </footer>
-</body>
-</html>
+
+
+    <?php get_footer(); ?>

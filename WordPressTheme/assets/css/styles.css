@@ -2286,8 +2286,8 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(1):before {
   content: "01";
   display: block;
-  width: 91px;
-  width: 5.6875rem;
+  width: 106px;
+  width: 6.625rem;
   height: 121px;
   height: 7.5625rem;
   font-size: 100px;
@@ -2305,8 +2305,8 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(2):before {
   content: "02";
   display: block;
-  width: 91px;
-  width: 5.6875rem;
+  width: 106px;
+  width: 6.625rem;
   height: 121px;
   height: 7.5625rem;
   font-size: 100px;
@@ -2324,8 +2324,8 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(3):before {
   content: "03";
   display: block;
-  width: 91px;
-  width: 5.6875rem;
+  width: 106px;
+  width: 6.625rem;
   height: 121px;
   height: 7.5625rem;
   font-size: 100px;
@@ -2343,8 +2343,8 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(1):after {
   content: "01";
   display: block;
-  width: 91px;
-  width: 5.6875rem;
+  width: 106px;
+  width: 6.625rem;
   height: 121px;
   height: 7.5625rem;
   font-size: 100px;
@@ -2362,8 +2362,8 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(2):after {
   content: "02";
   display: block;
-  width: 91px;
-  width: 5.6875rem;
+  width: 106px;
+  width: 6.625rem;
   height: 121px;
   height: 7.5625rem;
   font-size: 100px;
@@ -2381,8 +2381,8 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(3):after {
   content: "03";
   display: block;
-  width: 91px;
-  width: 5.6875rem;
+  width: 106px;
+  width: 6.625rem;
   height: 121px;
   height: 7.5625rem;
   font-size: 100px;
