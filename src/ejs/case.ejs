@@ -36,9 +36,22 @@
  <div class="sub-case__body">
    <div class="inner">
 
-     <section class="sub-case__top">
-      <% const caseLists=[
-      {
+    <div class="sub-case__taxonomies">
+        <div class="sub-case__taxonomy"><a href="">ビジネス英語研修</a></div><!-- /.sub-case__taxonomy -->
+        <div class="sub-case__taxonomy"><a href="">異文化コミュニケーション</a></div><!-- /.sub-case__taxonomy -->
+        <div class="sub-case__taxonomy"><a href="">ビジネス留学プログラム</a></div><!-- /.sub-case__taxonomy -->
+    </div><!-- /.sub-case__taxonomy -->
+
+     <section class="sub-case__block">
+       <div class="sub-case__title">
+         <h2 class="sub-case__title--jp">ビジネス英語研修</h2><!-- /.sub-case__title--jp -->
+         <p class="sub-case__title--en">Business English Training</p>
+       </div><!-- /.sib-case__title -->
+
+       <div class="sub-case__items">
+
+         <% const caseLists=[
+         {
         titleSmall:'Webマーケティング事業 ', 
         titleMain:'AAA株式会社 ',
         img:'./images/common/case1.jpg ', 
@@ -111,12 +124,166 @@
             text2: caseList.text2,
             subTitle3: caseList.subTitle3, 
             text3: caseList.text3,
-    }) %>
+          }) %>
     </div><!-- /.case-items__item -->  
     <% } %>
     </div><!-- /.case-items -->
+  </div><!-- /.sub-case__items -->
+
+  <div class="sub-case__btn">
+    <%- include('./parts/_btn-arrow',{text:'ビジネス英語研修の詳細',link:'#'}) %>
+  </div><!-- /.sub-case__btn -->
   </section><!-- /.sub-case__top -->
+  
+  
       
+     <section class="sub-case__block">
+       <div class="sub-case__title">
+         <h2 class="sub-case__title--jp">ビジネス英語研修</h2><!-- /.sub-case__title--jp -->
+         <p class="sub-case__title--en">Business English Training</p>
+       </div><!-- /.sib-case__title -->
+
+       <div class="sub-case__items">
+
+         <% const caseLists2=[
+         {
+        titleSmall:'Webマーケティング事業 ', 
+        titleMain:'AAA株式会社 ',
+        img:'./images/common/case1.jpg ', 
+        alt:' AAA株式会社様画像',
+        corse:' 研修コース', 
+        category:' ビジネス英語研修',
+        subTitle1:'研修の目的 ', 
+        text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+        subTitle2:'選んだ理由 ', 
+        text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+        subTitle3:' 導入後の成果・効果', 
+        text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+      },
+      {
+        titleSmall:'Webマーケティング事業 ', 
+        titleMain:'AAA株式会社 ',
+        img:'./images/common/case1.jpg ', 
+        alt:' AAA株式会社様画像',
+        corse:' 研修コース', 
+        category:' ビジネス英語研修',
+        subTitle1:'研修の目的 ', 
+        text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+        subTitle2:'選んだ理由 ', 
+        text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+        subTitle3:' 導入後の成果・効果', 
+        text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+      },
+      {
+        titleSmall:'Webマーケティング事業 ', 
+        titleMain:'AAA株式会社 ',
+        img:'./images/common/case1.jpg ', 
+        alt:' AAA株式会社様画像',
+        corse:' 研修コース', 
+        category:' ビジネス英語研修',
+        subTitle1:'研修の目的 ', 
+        text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+        subTitle2:'選んだ理由 ', 
+        text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+        subTitle3:' 導入後の成果・効果', 
+        text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+      },
+     ] %>
+     <div class="case-items">
+       <% for (var caseList2 of caseLists2) {%>
+        <div class="case-items__item">
+          <%- include('./parts/_case-item',{
+            titleSmall: caseList2.titleSmall, 
+            titleMain: caseList2.titleMain,
+            img: caseList2.img, 
+            alt: caseList2.alt,
+            corse: caseList2.corse, 
+            category: caseList2.category,
+            subTitle1: caseList2.subTitle1, 
+            text1: caseList2.text1,
+            subTitle2: caseList2.subTitle2, 
+            text2: caseList2.text2,
+            subTitle3: caseList2.subTitle3, 
+            text3: caseList2.text3,
+          }) %>
+    </div><!-- /.case-items__item -->  
+    <% } %>
+    </div><!-- /.case-items -->
+  </div><!-- /.sub-case__items -->
+
+  <div class="sub-case__btn">
+    <%- include('./parts/_btn-arrow',{text:'ビジネス英語研修の詳細',link:'#'}) %>
+  </div><!-- /.sub-case__btn -->
+  </section><!-- /.sub-case__top -->
+  
+  
+      
+     <section class="sub-case__block">
+       <div class="sub-case__title">
+         <h2 class="sub-case__title--jp">ビジネス英語研修</h2><!-- /.sub-case__title--jp -->
+         <p class="sub-case__title--en">Business English Training</p>
+       </div><!-- /.sib-case__title -->
+
+       <div class="sub-case__items">
+
+         <% const caseLists3=[
+         {
+        titleSmall:'Webマーケティング事業 ', 
+        titleMain:'AAA株式会社 ',
+        img:'./images/common/case1.jpg ', 
+        alt:' AAA株式会社様画像',
+        corse:' 研修コース', 
+        category:' ビジネス英語研修',
+        subTitle1:'研修の目的 ', 
+        text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+        subTitle2:'選んだ理由 ', 
+        text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+        subTitle3:' 導入後の成果・効果', 
+        text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+      },
+      {
+        titleSmall:'Webマーケティング事業 ', 
+        titleMain:'AAA株式会社 ',
+        img:'./images/common/case1.jpg ', 
+        alt:' AAA株式会社様画像',
+        corse:' 研修コース', 
+        category:' ビジネス英語研修',
+        subTitle1:'研修の目的 ', 
+        text1:' 海外にビジネス展開する計画があり、必要な英会話コミュニケーションを身につけることが目的。',
+        subTitle2:'選んだ理由 ', 
+        text2:'海外の企業で働いていた実績のある講師に直接ご指導いただけることは、とても貴重な経験になると考えた為 ',
+        subTitle3:' 導入後の成果・効果', 
+        text3:' 昨年からオーストラリアの企業と業務提携を開始し、3ヶ月という短い研修期間でしたが、業務に必要なコミュニケーションはスムーズに行えております。<br> 今後は更なるスキルアップを目指していきます。',
+      },
+     ] %>
+     <div class="case-items">
+       <% for (var caseList3 of caseLists3) {%>
+        <div class="case-items__item">
+          <%- include('./parts/_case-item',{
+            titleSmall: caseList3.titleSmall, 
+            titleMain: caseList3.titleMain,
+            img: caseList3.img, 
+            alt: caseList3.alt,
+            corse: caseList3.corse, 
+            category: caseList3.category,
+            subTitle1: caseList3.subTitle1, 
+            text1: caseList3.text1,
+            subTitle2: caseList3.subTitle2, 
+            text2: caseList3.text2,
+            subTitle3: caseList3.subTitle3, 
+            text3: caseList3.text3,
+          }) %>
+    </div><!-- /.case-items__item -->  
+    <% } %>
+    </div><!-- /.case-items -->
+  </div><!-- /.sub-case__items -->
+
+  <div class="sub-case__btn">
+    <%- include('./parts/_btn-arrow',{text:'ビジネス英語研修の詳細',link:'#'}) %>
+  </div><!-- /.sub-case__btn -->
+  </section><!-- /.sub-case__top -->
+  
+  
       
       
     </div><!-- /.inner -->

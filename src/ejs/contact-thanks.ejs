@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+<body>
+  <!-- ヘッダー -->
+  <%- include('./common/_header') %>
+  
+  <!-- MV -->
+  <%- include('./common/_sub-mv',{
+    imgPc:' ./images/common/sub-contact-mv.jpg ',
+    imgSp:' ./images/common/sub-contact-mv-sp.jpg ',
+    alt:'無料ダウンロード画像 ', 
+    title:'contact ', 
+    subtitle:'お問い合わせ完了 '
+  }) %>
+  
+  <!-- パンくず -->
+  <div class="sub-contact">
+    <div class="inner">
+      <div class="sub-contact__breadcrumb sub-breadcrumb">
+        <%- include('./common/_breadcrumb', {
+          navigationList: [
+          {
+            path: ' index.html ',
+            label: 'ホーム'
+          },
+          {
+            path: '  ',
+            label: 'お問い合わせ完了'
+          }
+          ]
+
+        }); %>
+      </div><!-- /.inner -->
+    </div><!-- /.sub-about__breadcrumb -->
+      
+    <section class="sub-contact__body">
+      <div class="inner">
+        <p class="sub-contact__text text-main">お問い合わせありがとうございました。<br>2日以内に担当者からメールにてご連絡いたしますので、しばらくお待ちいただけますと幸いです。</p><!-- /.contact__text -->
+         <a href="" class="sub-contact__top-link">トップへ戻る</a><!-- /.sub-contact__top-link -->
+    </section><!-- /.sub-contact__body -->
+   
+    
+<!-- ダウンロード・コンタクト -->
+<section class="contact-contact">
+  <%- include('./common/_footer-top') %>
+</section><!-- /.contact-contact -->
+
+<!-- フッター -->
+<%- include('./common/_footer') %>
+  
+  </body>
+</html>
+

@@ -1,0 +1,59 @@
+@use 'global' as * ; 
+
+
+
+.sub-contact__body{
+  margin-top: rem(60);
+  padding-bottom: rem(100);
+  
+
+  @include mq(tab) {
+    margin-top: rem(80);
+    width: min(100% , rem(687));
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: rem(160);
+  }
+}
+.sub-contact__text.text-main{
+}
+.sub-contact__title{
+  margin-top: rem(60);
+  text-align: center;
+  font-size: rem(24);
+  font-weight: $bold;
+
+  @include mq(tab) {
+    margin-top: rem(60);
+  }
+}
+.sub-contact__from{
+  margin-top: rem(40);
+
+  @include mq(tab) {
+    margin-top: rem(60);
+
+  }
+}
+
+.sub-contact__top-link {
+  display: inline-block;
+  padding-left: rem(30);
+  color: $color-main-dark2;
+  position: relative;
+  margin-top: rem(16);
+  text-decoration: underline;
+}
+
+.sub-contact__top-link::before {
+  content:"";
+  display: block;
+  width: rem(14);
+  height: rem(20);
+  background: url(../images/common/arrow.svg) no-repeat center center / cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+

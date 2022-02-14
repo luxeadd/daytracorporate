@@ -1,0 +1,64 @@
+@use 'global' as * ; 
+
+.contact {
+ 
+ }
+ 
+ .contact__contents {
+  
+ 
+ }
+ 
+ .contact__content + 
+ .contact__content {
+ margin-top: rem(20);  
+
+ @include mq(tab) {
+   margin-top: rem(32);
+ }
+ }
+ 
+ .contact__head {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .contact__title {
+     font-size: rem(14);
+     font-weight: 700;
+     margin-right: rem(10);
+
+     @include mq(tab) {
+       font-size: rem(18);
+     }
+ 
+ }
+ 
+ .contact__required {
+  font-size: rem(12);
+  line-height: 1;
+  background: $color-accent2;
+  color: #fff;
+  
+  @include mq(tab) {
+    padding: rem(5) rem(8);
+    
+  }
+ 
+ }
+ 
+ .contact__item {
+   margin-top: rem(8);
+   
+ }
+ 
+ .contact__content--button {
+   text-align: center;
+ }
+ 
+ .contact__content--checkbox {
+   @include mq(tab) {
+     text-align: center;
+     
+   }
+ }

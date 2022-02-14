@@ -1,0 +1,30 @@
+@use 'global' as * ; 
+
+.contact-text {
+  width: 100%;
+  }
+  
+  .contact-text__text {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $white;
+    background-image: none;
+    border: 1px solid  $color-line;
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: rem(14);
+    padding: rem(10) rem(16);
+    width: 100%;
+
+    @include mq(tab) {
+      font-size: rem(16);
+    }
+  }
+  
+  .contact-text__text:focus {
+    border: 1px solid $color-main-dark2;
+    box-shadow: none;
+    outline: none;
+  }

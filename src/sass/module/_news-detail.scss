@@ -148,6 +148,7 @@
   margin-top: rem(38);
   padding: rem(29);
   border-left: 4px solid $color-main-dark2;
+  background: rgba($color: #000000, $alpha: 0.05);
   position: relative;
   
   @include mq(tab) {
