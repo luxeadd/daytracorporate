@@ -2,19 +2,8 @@
  
  
  <!-- MV -->
-  <div class="sub-mv">
-    <div class="sub-mv_block">
-      <div class="sub-mv__img">
-        <picture>
-          <source srcset=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-service-mv.jpg " media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-          <img src=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-service-mv-sp.jpg  " alt="サービス画像 " /><!-- それ以外で表示 -->
-        </picture>
-      </div><!-- /.sub-mv__img -->
-      <h1 class="sub-mv__title">
-        <span class="sub-mv__title--en">service </span><br><span class="sub-mv__title--jp">サービス </span>
-      </h1><!-- /.sub-mv__title -->
-    </div><!-- /.sub-mv__block -->
-  </div><!-- /.sub-mv -->
+ <?php get_template_part( 'template-parts/sub-mv' ); ?>
+
   <!-- パンくず -->
   <div class="sub-service">
     <div class="inner">
@@ -228,5 +217,7 @@
       </div><!-- /.inner -->
     </section><!-- /.sub-service__top -->
 
+
+    <?php get_template_part( 'template-parts/download-contact' ); ?>
 
     <?php get_footer(); ?>

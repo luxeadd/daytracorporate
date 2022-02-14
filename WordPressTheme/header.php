@@ -32,11 +32,20 @@
 <header class="l-header header js-header">
     <div class="header__inner">
       <!-- ヘッダーロゴ -->
-      <div class="header__logo">
+     <?php if ( is_front_page() ): ?>
+        <h1 class="header__logo">
+        <a href="<?php echo $home ?>">
+          <img class="logo" src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/logo.svg" alt="Grobal Standard">
+        </a>
+      </h1><!-- /.header__logo -->
+     <?php else : ?>
+          <div class="header__logo">
         <a href="<?php echo $home ?>">
           <img class="logo" src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/logo.svg" alt="Grobal Standard">
         </a>
       </div><!-- /.header__logo -->
+     <?php endif; ?>
+      
       <!-- ドロワーアイコン  -->
       <button type="button" id="js-hamburger" class="header__drawer hamburger" aria-controls="js-drawer-menu" aria-expanded="false" area-label="メニューを開閉する">
         <span class="hamburger__line"></span>

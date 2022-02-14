@@ -1,19 +1,8 @@
 <?php get_header(); ?>
 
  <!-- MV -->
- <div class="sub-mv">
-    <div class="sub-mv_block">
-      <div class="sub-mv__img">
-        <picture>
-          <source srcset=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-download-mv.jpg " media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-          <img src=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-download-mv-sp.jpg  " alt="無料ダウンロード画像 " /><!-- それ以外で表示 -->
-        </picture>
-      </div><!-- /.sub-mv__img -->
-      <h1 class="sub-mv__title">
-        <span class="sub-mv__title--en">download </span><br><span class="sub-mv__title--jp">無料ダウンロード </span>
-      </h1><!-- /.sub-mv__title -->
-    </div><!-- /.sub-mv__block -->
-  </div><!-- /.sub-mv -->
+ <?php get_template_part( 'template-parts/sub-mv' ); ?>
+
   <!-- パンくず -->
   <div class="sub-download">
     <div class="inner">
@@ -101,5 +90,7 @@
         </div><!-- /.sub-download__flex -->
       </div><!-- /.inner -->
     </section><!-- /.sub-download__body -->
+
+    <?php get_template_part( 'template-parts/download-contact' ); ?>
 
 <?php get_footer(); ?>
