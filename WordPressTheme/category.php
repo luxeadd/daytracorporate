@@ -17,7 +17,13 @@
     <div class="sub-news___body">
       <div class="inner sub-news__inner">
         <section class="sub-news__top">
-          <h2 class="sub-news__top-title sub-news-title">全カテゴリ</h2><!-- /.sub-news__top-title sub-title -->
+        <?php
+            $category = get_the_category();
+            $cat_id   = $category[0]->cat_ID;
+            $cat_name = $category[0]->cat_name;
+            $cat_slug = $category[0]->category_nicename;
+          ?>
+          <h2 class="sub-news__top-title sub-news-title"><?php echo $cat_name; ?></h2><!-- /.sub-news__top-title sub-title -->
           <div class="sub-news__top-body">
             <div class="cards">
               <div class="cards__items">
@@ -72,17 +78,18 @@
           <div class="sub-news__pagination">
            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
           </div><!-- /.sub-news__pagination -->
-        
+          
         </section><!-- /.sub-news__top -->
-
-
-        <!-- 新着記事一覧  ・ カテゴリ一覧-->
+        
+        
+        <!-- 新着記事一覧  ・　カテゴリ一覧-->
         <?php get_template_part( 'template-parts/news-aside' ); ?>
-       
-
+        
+        
       </div><!-- /.inner -->
     </div><!-- /.sub-news___body -->
-
+  </div><!-- /.sub-news -->
+    
     <?php get_template_part( 'template-parts/download-contact' ); ?>
 
 <?php get_footer(); ?>

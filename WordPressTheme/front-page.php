@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
+<?php
+  $home = esc_url( home_url( "/" ));
+  $about = esc_url( home_url( "/about/" ));
+  $service = esc_url( home_url( "/service/" ));
+  $case = esc_url( home_url( "/case/" ));
+  $news = esc_url( home_url( "/news/" ));
+  $download = esc_url( home_url( "/download/" ));
+  $contact = esc_url( home_url( "/contact/" ));
+?>
 
   <!-- MV -->
   <div class="top-mv">
@@ -9,26 +18,26 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-mv.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-mv-sp1.jpg" alt="MV画像">
+              <source srcset="<?php $mvImg1 = scf::get('mv_img1'); echo wp_get_attachment_url( $mvImg1 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="<?php $mvImg1 = scf::get('mv_img1'); echo wp_get_attachment_url( $mvImg1 ); ?>" alt="MV画像">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-mv2.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-mv-sp2.jpg" alt="MV画像">
+              <source srcset="<?php $mvImg2 = scf::get('mv_img2'); echo wp_get_attachment_url( $mvImg2 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="<?php $mvImg2 = scf::get('mv_img2'); echo wp_get_attachment_url( $mvImg2 ); ?>" alt="MV画像">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-mv3.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-mv-sp3.jpg" alt="MV画像">
+              <source srcset="<?php $mvImg3 = scf::get('mv_img3'); echo wp_get_attachment_url( $mvImg3 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="<?php $mvImg3 = scf::get('mv_img3'); echo wp_get_attachment_url( $mvImg3 ); ?>" alt="MV画像">
             </picture>
           </div>
         </div>
       </div>
     </div><!-- /.top-mv__img -->
-    <div class="top-mv__body">
+    <div class="top-mv__body  js-mv-body">
       <h2 class="top-mv__title-en u-sp">
         <span>you can</span><br>
         <span>change</span><br>
@@ -52,7 +61,7 @@
           </div><!-- /.section-title -->
         </div><!-- /.top-about__title -->
         <div class="top-about__link">
-          <a href="#" class="view-more">
+          <a href="<?php echo $about ?>" class="view-more">
             <p class="view-more__text">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
         </div><!-- /.top-about__link -->
@@ -84,7 +93,7 @@
           </div><!-- /.section-title -->
         </div><!-- /.top-service__title -->
         <div class="top-service__link">
-          <a href="#" class="view-more view-more--black">
+          <a href="<?php echo $service ?>" class="view-more view-more--black">
             <p class="view-more__text view-more__text--black">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
         </div><!-- /.top-service__link -->
@@ -135,124 +144,56 @@
           </div><!-- /.section-title -->
         </div><!-- /.top-case__title -->
         <div class="top-case__link">
-          <a href="#" class="view-more">
+          <a href="<?php echo $case ?>" class="view-more">
             <p class="view-more__text">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
         </div><!-- /.top-case__link -->
         <div class="top-case__body">
           <div class="case-block">
             <div class="case-block__items">
+
+    <?php
+    $related_query = new WP_Query(
+      array(
+         'posts_per_page'=> 6, //表示件数
+         'post_type' => 'case', //カスタム投稿タイプ名
+         'orderby' => 'rand', //ランダム表示
+    
+      )
+    );
+    ?>
+    <?php if ( $related_query->have_posts() ) : ?>
+      <?php while ( $related_query->have_posts() ) : ?>
+        <?php $related_query->the_post(); ?>
               <article class="case-block__item">
-                <a href="">
+                <a href="<?php echo esc_url( home_url( '/case/' ) ); ?>">
                   <div class="case-block__header">
                     <figure class="case-block__figure">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/case1.jpg" alt="AAA株式会社様ロゴ">
+                    <?php
+                      if (has_post_thumbnail() ) {
+                      // アイキャッチ画像が設定されてれば大サイズで表示
+                      the_post_thumbnail('large');
+                      } 
+                      ?>
                     </figure>
                   </div><!-- /.case-block__header -->
                   <div class="case-block__body">
-                    <h3 class="case-block__title">AAA株式会社 様</h3>
+                    <h3 class="case-block__title"><?php the_title(); //タイトルを表示 ?></h3>
                   </div><!-- /.case-block__body -->
                   <div class="case-block__footer">
-                    <div class="case-block__category">ビジネス英語研修</div><!-- /.case-block__category -->
+                    <div class="case-block__category"><?php echo esc_html( get_the_terms( get_the_ID(), 'genre' )[0]->name ); ?></div><!-- /.case-block__category -->
                     <div class="case-block__arrow">
                       <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
                     </div><!-- /.case-block__link -->
                   </div><!-- /.case-block__footer -->
                 </a>
               </article>
-              <article class="case-block__item">
-                <a href="">
-                  <div class="case-block__header">
-                    <figure class="case-block__figure">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/case2.jpg" alt="合同会社BBB 様ロゴ">
-                    </figure>
-                  </div><!-- /.case-block__header -->
-                  <div class="case-block__body">
-                    <h3 class="case-block__title">合同会社BBB 様</h3>
-                  </div><!-- /.case-block__body -->
-                  <div class="case-block__footer">
-                    <div class="case-block__category">異文化コミュニケーション</div><!-- /.case-block__category -->
-                    <div class="case-block__arrow">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
-                    </div><!-- /.case-block__link -->
-                  </div><!-- /.case-block__footer -->
-                </a>
-              </article>
-              <article class="case-block__item">
-                <a href="">
-                  <div class="case-block__header">
-                    <figure class="case-block__figure">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/case3.jpg" alt="株式会社CCC 様ロゴ">
-                    </figure>
-                  </div><!-- /.case-block__header -->
-                  <div class="case-block__body">
-                    <h3 class="case-block__title">株式会社CCC 様</h3>
-                  </div><!-- /.case-block__body -->
-                  <div class="case-block__footer">
-                    <div class="case-block__category">ビジネス留学プログラム</div><!-- /.case-block__category -->
-                    <div class="case-block__arrow">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
-                    </div><!-- /.case-block__link -->
-                  </div><!-- /.case-block__footer -->
-                </a>
-              </article>
-              <article class="case-block__item">
-                <a href="">
-                  <div class="case-block__header">
-                    <figure class="case-block__figure">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/case4.jpg" alt="DDD株式会社 様ロゴ">
-                    </figure>
-                  </div><!-- /.case-block__header -->
-                  <div class="case-block__body">
-                    <h3 class="case-block__title">DDD株式会社 様</h3>
-                  </div><!-- /.case-block__body -->
-                  <div class="case-block__footer">
-                    <div class="case-block__category">異文化コミュニケーション</div><!-- /.case-block__category -->
-                    <div class="case-block__arrow">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
-                    </div><!-- /.case-block__link -->
-                  </div><!-- /.case-block__footer -->
-                </a>
-              </article>
-              <article class="case-block__item">
-                <a href="">
-                  <div class="case-block__header">
-                    <figure class="case-block__figure">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/case5.jpg" alt="EEE株式会社 様ロゴ">
-                    </figure>
-                  </div><!-- /.case-block__header -->
-                  <div class="case-block__body">
-                    <h3 class="case-block__title">EEE株式会社 様</h3>
-                  </div><!-- /.case-block__body -->
-                  <div class="case-block__footer">
-                    <div class="case-block__category">ビジネス留学プログラム</div><!-- /.case-block__category -->
-                    <div class="case-block__arrow">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
-                    </div><!-- /.case-block__link -->
-                  </div><!-- /.case-block__footer -->
-                </a>
-              </article>
-              <article class="case-block__item">
-                <a href="">
-                  <div class="case-block__header">
-                    <figure class="case-block__figure">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/case6.jpg" alt="FFF株式会社 様ロゴ">
-                    </figure>
-                  </div><!-- /.case-block__header -->
-                  <div class="case-block__body">
-                    <h3 class="case-block__title">FFF株式会社 様</h3>
-                  </div><!-- /.case-block__body -->
-                  <div class="case-block__footer">
-                    <div class="case-block__category">ビジネス英語研修</div><!-- /.case-block__category -->
-                    <div class="case-block__arrow">
-                      <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
-                    </div><!-- /.case-block__link -->
-                  </div><!-- /.case-block__footer -->
-                </a>
-              </article>
-            </div>
-          </div>
-        </div>
+              <?php endwhile; ?> 
+        <?php endif; ?>
+  <?php wp_reset_postdata(); ?>
+
+          
+        
       </div><!-- /.case-block__items -->
     </div><!-- /.case-block -->
     </div><!-- /.top-case__body -->
@@ -270,34 +211,43 @@
           </div><!-- /.section-title -->
         </div><!-- /.top-news__title -->
         <div class="top-news__link">
-          <a href="#" class="view-more view-more--black">
+          <a href="<?php echo $news ?>" class="view-more view-more--black">
             <p class="view-more__text view-more__text--black">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
         </div><!-- /.top-news__link -->
         <div class="top-news__body">
           <div class="news-block">
             <div class="news-block__items">
+
+<?php
+$newsTop_query = new WP_Query(
+array(
+'posts_per_page'=> 3, //表示件数
+'post_type' => 'post', //カスタム投稿タイプ名
+
+)
+);
+?>
+<?php if ( $newsTop_query->have_posts() ) : ?>
+<?php while ( $newsTop_query->have_posts() ) : ?>
+<?php $newsTop_query->the_post(); ?>
               <article class="news-block__item">
-                <div class="news-block__category"> 営業時間 </div><!-- /.news-block__category -->
-                <time class="news-block__date" datetime=" 2021-07-20 "> 2021.07.20 </time>
+              <?php
+              // カテゴリー１つ目の名前を表示
+              $category = get_the_category();
+              if ($category[0] ) {
+              echo '<div class="news-block__category">' . $category[0]->cat_name . '</div>';
+              }
+              ?>
+                <time class="news-block__date" datetime=" <?php the_time('Y-m-j'); ?> "> <?php the_time('Y.m.j'); ?> </time>
                 <h3 class="news-block__title">
-                  <a href=""> お盆期間中の営業について </a>
+                  <a href="<?php the_permalink(); //記事のリンクを表示 ?>"> <?php the_title(); //タイトルを表示 ?> </a>
                 </h3>
               </article>
-              <article class="news-block__item">
-                <div class="news-block__category"> その他 </div><!-- /.news-block__category -->
-                <time class="news-block__date" datetime=" 2021.06.01 "> 2021.06.01 </time>
-                <h3 class="news-block__title">
-                  <a href=""> 新型コロナウイルス対策ご協力のお願い </a>
-                </h3>
-              </article>
-              <article class="news-block__item">
-                <div class="news-block__category"> その他 </div><!-- /.news-block__category -->
-                <time class="news-block__date" datetime=" 2021.05.01 "> 2021.05.01 </time>
-                <h3 class="news-block__title">
-                  <a href=""> オンライン英会話スクール「グッドイングリッシュオンライン株式会社」との業務提携について </a>
-                </h3>
-              </article>
+              <?php endwhile; ?> 
+  <?php endif; ?>
+  <?php wp_reset_postdata(); ?>
+              
             </div><!-- /.new-block__items -->
           </div><!-- /.news-block -->
         </div><!-- /.top-news__body -->

@@ -31,6 +31,12 @@
     margin-top: rem(21);
   }
 }
+.news-block__item a {
+  transition: .3s;
+}
+.news-block__item a:hover {
+color: $color-accent2;
+}
 .news-block__category{
   display: inline-block;
   font-size: rem(12);

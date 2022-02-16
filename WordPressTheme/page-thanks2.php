@@ -25,15 +25,10 @@
             <p class="sub-download__top-text text-main">英語に苦手意識のある方でもご安心ください。<br>ビジネスで必要なコミュニケーションが取れるようになるまで実績豊富な講師陣がサポートいたします。<br> まずはこちらの資料をごらんください。</p><!-- /.sub-download__top-text -->
           </div><!-- /.sub-download__top -->
           <div class="sub-download__bottom">
-
-
- <?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-   <?php the_content(  ) ;?>
-  <?php endwhile;?>      
- <?php endif; ?>
-
-
+          <div class="sub-download__bottom-message">資料請求いただき<br>ありがとうございました！</div><!-- /.sub-download__bottom-message -->
+            <p class="sub-download__bottom-text text-main">資料は以下のリンクよりダウンロードください。</p><!-- /.sub-download__bottom-text -->
+            <a href="https://drive.google.com/file/d/1HWdE5sWZsVN5peXB7x122-qlrfEaBj8d/view?usp=sharing" class="sub-download__link">資料のダウンロードリンクはこちら</a><!-- /.sub-download__link -->
+            <p class="sub-download__bottom-text text-main">また、ご入力いただいたメールアドレスの方へもダウンロードリンクを送付しておりますので、ご確認いただけますと幸いです。</p><!-- /.sub-download__bottom-text -->
           </div><!-- /.sub-download__bottom -->
         </div><!-- /.sub-download__flex -->
       </div><!-- /.inner -->

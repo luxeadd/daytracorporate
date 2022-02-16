@@ -32,7 +32,8 @@
                     <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service1.jpg" alt="ビジネス英語研修 ">
                   </div><!-- /.sub-service-top__img -->
                 </div><!-- /.sub-service-top__head -->
-                <div class="sub-service-top__body">
+
+                <div id="english" class="sub-service-top__body">
                   <div class="sub-service-top__title">
                     <h2 class="sub-service-top__title-jp u-sp">ビジネス英語研修 </h2>
                     <h2 class="sub-service-top__title-jp u-pc">ビジネス英語研修 </h2>
@@ -53,7 +54,7 @@
                     </div><!-- /.sub-service-top__footer-item -->
                   </dl><!-- /.sub-service-top__footer -->
                   <div class="sub-service-top__btn">
-                    <a href="#" class="btn btn--arrow">お申し込みはこちら</a><!-- /.btn -->
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn--arrow">お申し込みはこちら</a>
                   </div><!-- /.sub-service-top__btn -->
                 </div><!-- /.sub-service-top__body -->
               </div><!-- /.sib-service-top__item -->
@@ -63,7 +64,7 @@
                     <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service2.jpg" alt="異文化コミュニケーション ">
                   </div><!-- /.sub-service-top__img -->
                 </div><!-- /.sub-service-top__head -->
-                <div class="sub-service-top__body">
+                <div id="culture" class="sub-service-top__body">
                   <div class="sub-service-top__title">
                     <h2 class="sub-service-top__title-jp u-sp">異文化<br>コミュニケーション </h2>
                     <h2 class="sub-service-top__title-jp u-pc">異文化コミュニケーション </h2>
@@ -84,7 +85,7 @@
                     </div><!-- /.sub-service-top__footer-item -->
                   </dl><!-- /.sub-service-top__footer -->
                   <div class="sub-service-top__btn">
-                    <a href="#" class="btn btn--arrow">お申し込みはこちら</a><!-- /.btn -->
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn--arrow">お申し込みはこちら</a><!-- /.btn -->
                   </div><!-- /.sub-service-top__btn -->
                 </div><!-- /.sub-service-top__body -->
               </div><!-- /.sib-service-top__item -->
@@ -94,7 +95,7 @@
                     <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service3.jpg" alt="ビジネス留学プログラム ">
                   </div><!-- /.sub-service-top__img -->
                 </div><!-- /.sub-service-top__head -->
-                <div class="sub-service-top__body">
+                <div id="abroad" class="sub-service-top__body">
                   <div class="sub-service-top__title">
                     <h2 class="sub-service-top__title-jp u-sp">ビジネス留学<br> プログラム </h2>
                     <h2 class="sub-service-top__title-jp u-pc">ビジネス留学プログラム </h2>
@@ -115,7 +116,7 @@
                     </div><!-- /.sub-service-top__footer-item -->
                   </dl><!-- /.sub-service-top__footer -->
                   <div class="sub-service-top__btn">
-                    <a href="#" class="btn btn--arrow">お申し込みはこちら</a><!-- /.btn -->
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn--arrow">お申し込みはこちら</a><!-- /.btn -->
                   </div><!-- /.sub-service-top__btn -->
                 </div><!-- /.sub-service-top__body -->
               </div><!-- /.sib-service-top__item -->
@@ -135,7 +136,7 @@
                 <div class="sub-service-flow__number"> 01</div><!-- /.sub-service-flow__number -->
               </div><!-- /.sub-service-flow__head -->
               <div class="sub-service-flow__body">
-                <h3 class="sub-service-flow__sub-title">お問い合わせ </h2>
+                <h3 class="sub-service-flow__sub-title">お問い合わせ </h3>
                   <p class="sub-service-flow__text text-main"> お問い合わせフォームより必要事項を誤入力の上、お申し込みください</p>
                   <p class="sub-service-flow__text2 text-main">※キャンセルのご連絡は2日前までにお願いいたします</p>
               </div><!-- /.sub-service-flow__body -->
@@ -146,7 +147,7 @@
                 <div class="sub-service-flow__number"> 02</div><!-- /.sub-service-flow__number -->
               </div><!-- /.sub-service-flow__head -->
               <div class="sub-service-flow__body">
-                <h3 class="sub-service-flow__sub-title">ご提案 </h2>
+                <h3 class="sub-service-flow__sub-title">ご提案 </h3>
                   <p class="sub-service-flow__text text-main"> ご依頼の背景をお伺いし、必要なスキルと習得期間から最適なプランをご提案いたします</p>
                   <p class="sub-service-flow__text2 text-main">※キャンセルのご連絡は2日前までにお願いいたします</p>
               </div><!-- /.sub-service-flow__body -->
@@ -157,7 +158,7 @@
                 <div class="sub-service-flow__number"> 03</div><!-- /.sub-service-flow__number -->
               </div><!-- /.sub-service-flow__head -->
               <div class="sub-service-flow__body">
-                <h3 class="sub-service-flow__sub-title">日帝調整 </h2>
+                <h3 class="sub-service-flow__sub-title">日帝調整 </h3>
                   <p class="sub-service-flow__text text-main"> 研修日数と開始日を調整し、今後の流れ全体の段取りをご提案いたします</p>
                   <p class="sub-service-flow__text2 text-main">※キャンセルのご連絡は2日前までにお願いいたします</p>
               </div><!-- /.sub-service-flow__body -->
@@ -168,7 +169,7 @@
                 <div class="sub-service-flow__number"> 04</div><!-- /.sub-service-flow__number -->
               </div><!-- /.sub-service-flow__head -->
               <div class="sub-service-flow__body">
-                <h3 class="sub-service-flow__sub-title">研修開始 </h2>
+                <h3 class="sub-service-flow__sub-title">研修開始 </h3>
                   <p class="sub-service-flow__text text-main"> 研修当日はお約束のお時間の30分前に講師が伺います。</p>
                   <p class="sub-service-flow__text2 text-main">※キャンセルのご連絡は2日前までにお願いいたします</p>
               </div><!-- /.sub-service-flow__body -->
@@ -184,38 +185,39 @@
           <div class="sub-service-qa">
             <div class="sub-service-qa__item">
               <input id=" 1" type="checkbox" name="tabs">
-              <label class="sub-service-qa__label" for=" 1"> どんな教材を使うのでしょうか？</label>
-              <div class="sub-service-qa__item-content text-main">録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br> ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。 </div>
+              <label class="sub-service-qa__label" for=" 1"> <?php echo SCF::get( 'question1' );?></label>
+              <div class="sub-service-qa__item-content text-main"><?php $serviceTextSub = scf::get('answer1'); echo nl2br( $serviceTextSub ); ?> </div>
             </div>
             <div class="sub-service-qa__item">
               <input id=" 2" type="checkbox" name="tabs">
-              <label class="sub-service-qa__label" for=" 2"> 講義中のレッスン内容は録音してもよいのでしょうか？</label>
-              <div class="sub-service-qa__item-content text-main">録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br> ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。 </div>
+              <label class="sub-service-qa__label" for=" 2"><?php echo SCF::get( 'question2' );?></label>
+              <div class="sub-service-qa__item-content text-main"><?php $serviceTextSub = scf::get('answer2'); echo nl2br( $serviceTextSub ); ?> </div>
             </div>
             <div class="sub-service-qa__item">
               <input id=" 3" type="checkbox" name="tabs">
-              <label class="sub-service-qa__label" for=" 3"> 講師はどんな人が担当しているのでしょうか？</label>
-              <div class="sub-service-qa__item-content text-main">録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br> ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。 </div>
+              <label class="sub-service-qa__label" for=" 3"> <?php echo SCF::get( 'question3' );?></label>
+              <div class="sub-service-qa__item-content text-main"><?php $serviceTextSub = scf::get('answer3'); echo nl2br( $serviceTextSub ); ?> </div>
             </div>
             <div class="sub-service-qa__item">
               <input id=" 4 " type="checkbox" name="tabs">
-              <label class="sub-service-qa__label" for=" 4 "> 講師が合わないと感じた場合、変更してもらえるのでしょうか？</label>
-              <div class="sub-service-qa__item-content text-main">録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br> ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。 </div>
+              <label class="sub-service-qa__label" for=" 4 "><?php echo SCF::get( 'question4' );?></label>
+              <div class="sub-service-qa__item-content text-main"><?php $serviceTextSub = scf::get('answer4'); echo nl2br( $serviceTextSub ); ?> </div>
             </div>
             <div class="sub-service-qa__item">
               <input id=" 5 " type="checkbox" name="tabs">
-              <label class="sub-service-qa__label" for=" 5 "> 講義当日のキャンセルは可能でしょうか？</label>
-              <div class="sub-service-qa__item-content text-main">録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br> ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。 </div>
+              <label class="sub-service-qa__label" for=" 5 "><?php echo SCF::get( 'question5' );?></label>
+              <div class="sub-service-qa__item-content text-main"><?php $serviceTextSub = scf::get('answer5'); echo nl2br( $serviceTextSub ); ?> </div>
             </div>
             <div class="sub-service-qa__item">
               <input id=" 6 " type="checkbox" name="tabs">
-              <label class="sub-service-qa__label" for=" 6 "> 途中退会した場合、返金は可能でしょうか？</label>
-              <div class="sub-service-qa__item-content text-main">録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br> ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。 </div>
+              <label class="sub-service-qa__label" for=" 6 "><?php echo SCF::get( 'question6' );?></label>
+              <div class="sub-service-qa__item-content text-main"><?php $serviceTextSub = scf::get('answer6'); echo nl2br( $serviceTextSub ); ?> </div>
             </div>
           </div>
         </div><!-- /.sub-service__qa-block -->
       </div><!-- /.inner -->
     </section><!-- /.sub-service__top -->
+  </div><!-- /.sub-service -->
 
 
     <?php get_template_part( 'template-parts/download-contact' ); ?>

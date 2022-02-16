@@ -7,18 +7,12 @@
   <div class="sub-about">
     <div class="inner">
       <div class="sub-about__breadcrumb sub-breadcrumb">
-        <nav class="breadcrumb">
-          <ol class="breadcrumb__list">
-            <li class="breadcrumb__item">
-              <a href=" index.html "> ホーム </a>
-            </li>
-            <li class="breadcrumb__item">
-              <a href="  "> 当社について </a>
-            </li>
-          </ol>
-        </nav><!-- /.breadcrumb -->
-      </div><!-- /.inner -->
+      <?php if(function_exists('bcn_display'))
+    {
+      bcn_display();
+    }?>
     </div><!-- /.sub-about__breadcrumb -->
+  </div><!-- /.inner -->
     <!-- mission.vision -->
     <div class="sub-about__top">
       <div class="inner">
@@ -114,7 +108,7 @@
               </div><!-- /.staff-intro__header -->
               <div class="staff-intro__block">
                 <div class="staff-intro__body">
-                  <p class="staff-intro__position">代表取締役社長 </h3>
+                  <p class="staff-intro__position">代表取締役社長 </p>
                   <p class="staff-intro__name"> 波瑠 慶太</p>
                   <p class="staff-intro__text text-main">20年間外資系企業に勤務し、世界17カ国でビジネスを展開。<br> 様々な文化に触れ、コミュニケーションスキルを磨き、同時にその必要性を実感する。<br>自身も講師を務め、実体験から得られた知見を皆様に還元し、グローバルなビジネス展開をサポートいたします。 </p><!-- /.staff-intro__text text-main -->
                 </div><!-- /.staff-intro__body -->
@@ -145,7 +139,7 @@
               </div><!-- /.staff-intro__header -->
               <div class="staff-intro__block">
                 <div class="staff-intro__body">
-                  <p class="staff-intro__position">取締役 </h3>
+                  <p class="staff-intro__position">取締役 </p>
                   <p class="staff-intro__name"> ジャック・スミス</p>
                   <p class="staff-intro__text text-main">オーストラリア出身。<br>英会話の講師として13年のキャリアがあります。<br>翻訳業務も担当しており、外国映画の日本版DVDの字幕やテレビ番組の英語をヒヤリングなども行なっております。<br>皆様に「より気持ちの伝わる英会話」を習得していただくサポートをいたします。 </p><!-- /.staff-intro__text text-main -->
                 </div><!-- /.staff-intro__body -->
@@ -176,7 +170,7 @@
               </div><!-- /.staff-intro__header -->
               <div class="staff-intro__block">
                 <div class="staff-intro__body">
-                  <p class="staff-intro__position">取締役 </h3>
+                  <p class="staff-intro__position">取締役 </p>
                   <p class="staff-intro__name"> メアリー・ジャクソン</p>
                   <p class="staff-intro__text text-main">アメリカ出身。<br>メジャーリーグ球団「ニューヨークヤンキース」の通訳担当として7年間チームに在籍。<br> 数多くの契約交渉の経験を活かし、国際ビジネスにおけるコミュニケーションのマナーから応用までお伝えいたします。 </p><!-- /.staff-intro__text text-main -->
                 </div><!-- /.staff-intro__body -->

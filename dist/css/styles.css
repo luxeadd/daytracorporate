@@ -1067,6 +1067,8 @@ input[type=checkbox]:checked + span::after {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   .contact-button__submit {
@@ -1078,6 +1080,8 @@ input[type=checkbox]:checked + span::after {
 .contact-button__submit:hover,
 .contact-button__submit:focus {
   outline: none;
+  background: #023E78;
+  color: #fff;
 }
 
 .contact-button__submit::-moz-foucus-inner {
@@ -1185,6 +1189,8 @@ input[type=checkbox]:checked + span::after {
 .contact__required {
   font-size: 12px;
   font-size: 0.75rem;
+  padding: 3px 8px;
+  padding: 0.1875rem 0.5rem;
   line-height: 1;
   background: #D33365;
   color: #fff;
@@ -1898,6 +1904,15 @@ input[type=checkbox]:checked + span::after {
   .news-block__item {
     margin-top: 1.3125rem;
   }
+}
+
+.news-block__item a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.news-block__item a:hover {
+  color: #D33365;
 }
 
 .news-block__category {
@@ -3749,6 +3764,11 @@ input[type=checkbox]:checked + span::after {
   .previouspostslink {
     margin-right: 0.75rem;
   }
+}
+
+.nextpostslink,
+.previouspostslink {
+  top: 0;
 }
 
 .sub-about__breadcrumb {
