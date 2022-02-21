@@ -37,30 +37,30 @@
         </div>
       </div>
     </div><!-- /.top-mv__img -->
-    <div class="top-mv__body  js-mv-body">
-      <h2 class="top-mv__title-en u-sp">
+    <div class="top-mv__body ">
+      <h2 class="top-mv__title-en u-sp   js-mv-en">
         <span>you can</span><br>
         <span>change</span><br>
         <span>the world</span>
       </h2><!-- /.top-mv__title -->
-      <h2 class="top-mv__title-en u-pc">
+      <h2 class="top-mv__title-en u-pc  js-mv-en">
         <span>you can change</span><br>
         <span>the world</span>
       </h2><!-- /.top-mv__title -->
-      <p class="too-mv__title-jp">世界で活躍できるグローバルな人材を育てる</p><!-- /.too-mv__title-jp -->
+      <p class="too-mv__title-jp js-mv-jp">世界で活躍できるグローバルな人材を育てる</p><!-- /.too-mv__title-jp -->
     </div><!-- /.top-mv__body -->
   </div><!-- /.top-mv -->
   <!-- about -->
-  <section class="top-about top-about-layout">
+  <section class="top-about top-about-layout  js-top-about">
     <div class="inner">
       <div class="top-about__flex ">
-        <div class="top-about__title">
-          <div class="section-title">
+        <div class="top-about__title js-about-title">
+          <div class="section-title ">
             <h2 class="section-title__en">about us</h2><!-- /.section-title__title -->
             <p class="section-title__jp">当社について</p><!-- /.section-title__title -->
           </div><!-- /.section-title -->
         </div><!-- /.top-about__title -->
-        <div class="top-about__link">
+        <div class="top-about__link js-top-about-link">
           <a href="<?php echo $about ?>" class="view-more">
             <p class="view-more__text">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
@@ -68,12 +68,12 @@
         <div class="top-about__body">
           <div class="about-block">
             <div class="about-block__inner">
-              <div class="about-block__text-box">
+              <div class="about-block__text-box js-top-about-text">
                 <p class="about-block__text text-main">急速に広がったグローバル社会に対応できる人材を育成することで、文化・言語の垣根を越えたコミュニケーションを活発にし、一人でも多くの人が豊かに暮らせる世界を実現することを使命とする。</p><!-- /.about-block__text -->
                 <p class="about-block__text text-main">コミュニケーションスキル習得をサポートすることで一人でも多くのビジネスパーソンの視野を広げ、世界を舞台に新しい相乗効果を生む未来を創造する。 </p><!-- /.about-block__text -->
                 <p class="about-block__text text-main">文化の垣根を越えた人と人とのつながりが新しい価値を生むことを信念とする。</p><!-- /.about-block__text -->
               </div><!-- /.about-block_text -->
-              <div class="about-block__img">
+              <div class="about-block__img js-top-about-img">
                 <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-about.jpg" alt="当社について">
               </div><!-- /.about-block__img -->
             </div><!-- /.inner -->
@@ -83,16 +83,16 @@
     </div><!-- /.inner -->
   </section><!-- /.top-about -->
   <!-- service -->
-  <section class="top-service top-service-layout">
+  <section class="top-service top-service-layout js-top-service">
     <div class="inner">
       <div class="top-service__flex ">
-        <div class="top-service__title">
+        <div class="top-service__title js-service-title">
           <div class="section-title">
             <h2 class="section-title__en">service</h2><!-- /.section-title__title -->
             <p class="section-title__jp">サービス</p><!-- /.section-title__title -->
           </div><!-- /.section-title -->
         </div><!-- /.top-service__title -->
-        <div class="top-service__link">
+        <div class="top-service__link js-top-service-link">
           <a href="<?php echo $service ?>" class="view-more view-more--black">
             <p class="view-more__text view-more__text--black">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
@@ -101,31 +101,31 @@
           <div class="service-block">
             <ul class="service-block_items">
               <li class="service-block__item">
-                <div class="service-block__img">
+                <div class="service-block__img js-top-service-img">
                   <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service1.jpg" alt="ビジネス英語研修画像">
                   <h3 class="service-block__title">
                     <span>ビジネス英語研修</span>
                   </h3><!-- /.service-block__title -->
                 </div><!-- /.service-block__img -->
-                <p class="service-block__text text-main"> ビジネス英会話はこれからの時代、すべてのビジネスパーソンが学ぶべき必須スキルと考えおります。海外にビジネス展開する際にはもちろんのこと、日本国内でも英会話コミュニケーションができることによってチャンスが掴める場面があります。 </p><!-- /.service-block__text -->
+                <p class="service-block__text text-main js-top-service-text"> ビジネス英会話はこれからの時代、すべてのビジネスパーソンが学ぶべき必須スキルと考えおります。海外にビジネス展開する際にはもちろんのこと、日本国内でも英会話コミュニケーションができることによってチャンスが掴める場面があります。 </p><!-- /.service-block__text -->
               </li><!-- /.service-block__item -->
               <li class="service-block__item">
-                <div class="service-block__img">
+                <div class="service-block__img js-top-service-img">
                   <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service2.jpg" alt=" ">
                   <h3 class="service-block__title">
                     <span>異文化</span><span>コミュニケーション研修</span>
                   </h3><!-- /.service-block__title -->
                 </div><!-- /.service-block__img -->
-                <p class="service-block__text text-main"> 急速にグローバル化が進んでおり、ビジネスの場面に限らず様々な文化的背景を持つ者同士の交流はもはや日常的な光景となりました。<br>言語や文化が異なる相手を理解することで世界が広がり、新たなビジネスチャンスに巡り会うことは少なくありません。 </p><!-- /.service-block__text -->
+                <p class="service-block__text text-main js-top-service-text"> 急速にグローバル化が進んでおり、ビジネスの場面に限らず様々な文化的背景を持つ者同士の交流はもはや日常的な光景となりました。<br>言語や文化が異なる相手を理解することで世界が広がり、新たなビジネスチャンスに巡り会うことは少なくありません。 </p><!-- /.service-block__text -->
               </li><!-- /.service-block__item -->
               <li class="service-block__item">
-                <div class="service-block__img">
+                <div class="service-block__img js-top-service-img">
                   <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service3.jpg" alt="ビジネス英語研修画像">
                   <h3 class="service-block__title">
                     <span>ビジネス留学</span><span>サポートプログラム</span>
                   </h3><!-- /.service-block__title -->
                 </div><!-- /.service-block__img -->
-                <p class="service-block__text text-main"> 将来的に海外で働きたい方に向けた講座をご用意しております。一般的には3ヶ月〜1年の期間で基本的な英会話スキルと、海外でのビジネスマナー習得を目指します。<br> 通常の語学留学では得られないビジネスの場で通用するコミュニケーションスキル習得に重点をおいておりますので、海外でビジネス展開する際に自信を持って活動することができるようになります。 </p><!-- /.service-block__text -->
+                <p class="service-block__text text-main js-top-service-text"> 将来的に海外で働きたい方に向けた講座をご用意しております。一般的には3ヶ月〜1年の期間で基本的な英会話スキルと、海外でのビジネスマナー習得を目指します。<br> 通常の語学留学では得られないビジネスの場で通用するコミュニケーションスキル習得に重点をおいておりますので、海外でビジネス展開する際に自信を持って活動することができるようになります。 </p><!-- /.service-block__text -->
               </li><!-- /.service-block__item -->
             </ul><!-- /.service-block_items -->
           </div><!-- /.service-block -->
@@ -134,16 +134,16 @@
     </div><!-- /.inner -->
   </section><!-- /.top-service -->
   <!-- case -->
-  <section class="top-case">
+  <section class="top-case js-top-case">
     <div class="inner">
       <div class="top-case__flex ">
-        <div class="top-case__title">
+        <div class="top-case__title js-case-title">
           <div class="section-title section-title--white">
             <h2 class="section-title__en section-title__en--white">case study</h2><!-- /.section-title__title -->
             <p class="section-title__jp section-title__jp--white">導入事例</p><!-- /.section-title__title -->
           </div><!-- /.section-title -->
         </div><!-- /.top-case__title -->
-        <div class="top-case__link">
+        <div class="top-case__link js-top-case-link">
           <a href="<?php echo $case ?>" class="view-more">
             <p class="view-more__text">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
@@ -168,7 +168,7 @@
               <article class="case-block__item">
                 <a href="<?php echo esc_url( home_url( '/case/' ) ); ?>">
                   <div class="case-block__header">
-                    <figure class="case-block__figure">
+                    <figure class="case-block__figure js-top-case-img">
                     <?php
                       if (has_post_thumbnail() ) {
                       // アイキャッチ画像が設定されてれば大サイズで表示
@@ -177,10 +177,10 @@
                       ?>
                     </figure>
                   </div><!-- /.case-block__header -->
-                  <div class="case-block__body">
-                    <h3 class="case-block__title"><?php the_title(); //タイトルを表示 ?></h3>
+                  <div class="case-block__body js-top-case-text">
+                    <h3 class="case-block__title "><?php the_title(); //タイトルを表示 ?></h3>
                   </div><!-- /.case-block__body -->
-                  <div class="case-block__footer">
+                  <div class="case-block__footer js-top-case-text">
                     <div class="case-block__category"><?php echo esc_html( get_the_terms( get_the_ID(), 'genre' )[0]->name ); ?></div><!-- /.case-block__category -->
                     <div class="case-block__arrow">
                       <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/arrow.png" alt="矢印">
@@ -201,21 +201,21 @@
     </div><!-- /.inner -->
   </section><!-- /.top-case -->
   <!-- news -->
-  <section class="top-news">
+  <section class="top-news  js-top-news">
     <div class="inner">
       <div class="top-news__flex ">
-        <div class="top-news__title">
+        <div class="top-news__title js-news-title">
           <div class="section-title">
             <h2 class="section-title__en">news</h2><!-- /.section-title__title -->
             <p class="section-title__jp">新着情報</p><!-- /.section-title__title -->
           </div><!-- /.section-title -->
         </div><!-- /.top-news__title -->
-        <div class="top-news__link">
+        <div class="top-news__link js-top-news-link">
           <a href="<?php echo $news ?>" class="view-more view-more--black">
             <p class="view-more__text view-more__text--black">View more</p><!-- /.view-more__text -->
           </a><!-- /.view-more -->
         </div><!-- /.top-news__link -->
-        <div class="top-news__body">
+        <div class="top-news__body js-top-news-text">
           <div class="news-block">
             <div class="news-block__items">
 

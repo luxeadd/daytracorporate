@@ -34,42 +34,31 @@ drawerMenuItem.addEventListener('click', () => {
 });
 
 
-//swiper===========================
-let slider1 = new Swiper ('.js-mv-slider', {
-  //自動スライド
-      autoplay: {
-        delay: 2000,
-      },
-   //切り替えエフェクトの指定
-    //slide  fade  cube coverflow  flip
-    effect: "fade",
-   
-    //切り替わる速さ
-    speed: 4000,
-    
-    //ループの有無
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-     el: '.swiper-pagination',
-      clickable : true,
-     },
-    
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-     },
-});
-//==============================
 
 
 //GSAP=============================
+   
+  //下層ページMV
+gsap.from('.js-sub-mv-decoration ' , {
+  width:'100%',
+  duration:0.8
+})
+gsap.fromTo('.js-sub-mv-title' , {
+  y:60,
+  autoAlpha:0
+}, {
+  y:0,
+  autoAlpha:1,
+  duration: 0.5,
+  delay:0.3,
+  ease: 'power2. out',
+})
 
-gsap.to('. js-mv-body', {
-  x: 100,
-});
+  
+
+
+
+
 
 
 

@@ -17,11 +17,39 @@
   width: calc(335 / 375) * 100%;
   height: 100%;
   margin-left: auto;
+  position: relative;
+ 
   
+  animation-name: clip2;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:0.4s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+  animation-delay: .8s;/*アニメーションの開始を遅らせる*/
  
   @include mq(tab) {
    width: 93%; 
   }
+}
+
+.top-mv__img::after {
+content: "";
+display: block;
+width: 100%;
+height: 100%;
+background: rgba($color: $color-main-dark2, $alpha: 1);
+position: absolute;
+top: 0;
+left: 0;
+z-index: 5;
+
+
+  animation-name: clip;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.8s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+
 }
 
 .top-mv__img img{

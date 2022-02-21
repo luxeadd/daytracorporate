@@ -2,16 +2,17 @@
 
 <!-- MV -->
 <div class="sub-mv">
-    <div class="sub-mv_block">
-  <div class="sub-mv__img">
+    <div class="sub-mv__block">
+     <div class="sub-mv__img">
         <picture>
           <source srcset=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-case-mv.jpg " media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
           <img src=" <?php echo get_template_directory_uri(  ) ?>/./assets/images/common/sub-case-mv-sp.jpg  " alt="当社について画像 " /><!-- それ以外で表示 -->
         </picture>
-      </div><!-- /.sub-mv__img -->
-      <h1 class="sub-mv__title">
+    </div><!-- /.sub-mv__img -->
+      <h1 class="sub-mv__title js-sub-mv-title">
         <span class="sub-mv__title--en">case study </span><br><span class="sub-mv__title--jp"> 導入事例 </span>
       </h1><!-- /.sub-mv__title -->
+      <div class="sub-mv__decoration js-sub-mv-decoration"></div><!-- /.sub-mv__decoration -->
     </div><!-- /.sub-mv__block -->
   </div><!-- /.sub-mv -->
 

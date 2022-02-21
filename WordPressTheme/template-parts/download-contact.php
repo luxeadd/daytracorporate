@@ -10,8 +10,8 @@
 
 
   <section class="download-contact">
-    <div class="footer-top">
-      <div class="footer-top__body">
+    <div class="footer-top  ">
+      <div class="footer-top__body js-top-download">
         <div class="footer-top__title">
           <div class="section-title section-title--small">
             <h2 class="section-title__en section-title__en--small">download</h2><!-- /.section-title__title -->
@@ -22,7 +22,7 @@
           <a href="<?php echo $download ?>" class="btn btn--yellow">View more</a><!-- /.btn -->
         </div><!-- /.footer-top__btn -->
       </div><!-- /.footer-top__body -->
-      <div class="footer-top__body">
+      <div class="footer-top__body js-top-download">
         <div class="footer-top__title">
           <div class="section-title section-title--small">
             <h2 class="section-title__en section-title__en--small">contact</h2><!-- /.section-title__title -->

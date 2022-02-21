@@ -7,13 +7,12 @@
   }
 }
 
-.sub-mv_block{
+.sub-mv__block{
   height: rem(250);
   position: relative;
 }
-.sub-mv_block::before {
-  content: "";
-  display: block;
+
+.sub-mv__decoration {
   width: rem(165);
   height: 100%;
   background: rgba($color: $color-main-dark2, $alpha: 0.8);
