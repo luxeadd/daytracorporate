@@ -35,10 +35,26 @@ drawerMenuItem.addEventListener('click', () => {
 
 
 
+ //ダウンロード・コンタクト
+ const tlTopDownload = gsap.timeline({
+  scrollTrigger: {
+  trigger: '.js-top-download ',
+  start: 'top center',
+  // markers: true
+  }
+});
 
-//GSAP=============================
-   
+tlTopDownload.fromTo('.js-top-download' , {
+  clipPath: 'polygon(0 0, 0 100%, 0 100%, 0 0)'
+  },{
+    clipPath: 'polygon(0 0, 0 100%, 100% 100%, 100% 0)'
+  }
+  )
+
   //下層ページMV
+
+
+
 gsap.from('.js-sub-mv-decoration ' , {
   width:'100%',
   duration:0.8

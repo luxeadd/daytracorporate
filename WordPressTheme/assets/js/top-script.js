@@ -115,7 +115,7 @@ tlTopAbout.fromTo('.js-about-title' , {
     ease: 'power2. out',
   
   
-  },'title').fromTo('.js-top-about-img', {
+  }).fromTo('.js-top-about-img', {
     clipPath: 'polygon(0 0, 0 0, 0 0, 0 0)'
     
   },{
@@ -138,7 +138,7 @@ tlTopAbout.fromTo('.js-about-title' , {
     autoAlpha:1,
     duration: 0.5,
     ease: 'power2. out'
-  },'title').from('.js-top-about', {
+  },'about').from('.js-top-about', {
     background: 'linear-gradient(10deg, #ffffff 0%, #ffffff 100%, #EDF3F8 100%, #EDF3F8 0%, #ffffff 0%)',
     // background:'#ffffff',
     duration:0.5
@@ -164,7 +164,7 @@ tlTopService.fromTo('.js-service-title' , {
     ease: 'power2. out',
   
   
-  },'title').fromTo('.js-top-service-img', {
+  }).fromTo('.js-top-service-img', {
     scale:0.7,
     opacity:0
   },{
@@ -188,7 +188,7 @@ tlTopService.fromTo('.js-service-title' , {
     autoAlpha:1,
     duration: 0.5,
     ease: 'power2. out'
-  },'title').from('.js-top-service', {
+  },'service').from('.js-top-service', {
     background: 'linear-gradient(10deg, #ffffff 0%, #ffffff 100%, #EDF3F8 100%, #EDF3F8 0%, #ffffff 0%)',
     // background:'#ffffff',
     duration:0.5
@@ -215,7 +215,7 @@ tlTopCase.fromTo('.js-case-title' , {
     ease: 'power2. out',
   
   
-  },'title').fromTo('.js-top-case-img', {
+  }).fromTo('.js-top-case-img', {
     clipPath: 'polygon(0 0, 0 0, 0 0, 0 0)'
     
   },{
@@ -238,7 +238,7 @@ tlTopCase.fromTo('.js-case-title' , {
     autoAlpha:1,
     duration: 0.5,
     ease: 'power2. out'
-  },'title').from('.js-top-case', {
+  },'case').from('.js-top-case', {
    
     duration:0.5
   },'case'
@@ -263,7 +263,7 @@ tlTopNews.fromTo('.js-news-title' , {
     ease: 'power2. out',
   
   
-  },'title').fromTo('.js-top-news-text', {
+  }).fromTo('.js-top-news-text', {
     y:60,
     autoAlpha:0
   },{
@@ -279,7 +279,7 @@ tlTopNews.fromTo('.js-news-title' , {
     autoAlpha:1,
     duration: 0.5,
     ease: 'power2. out'
-  },'title').from('.js-top-news', {
+  },'news').from('.js-top-news', {
     background: 'linear-gradient(10deg, #ffffff 0%, #ffffff 100%, #EDF3F8 100%, #EDF3F8 0%, #ffffff 0%)',
     // background:'#ffffff',
     duration:0.5
@@ -302,7 +302,7 @@ tlTopDownload.fromTo('.js-top-download' , {
   }
   )
 
-
+  
 
 
 
