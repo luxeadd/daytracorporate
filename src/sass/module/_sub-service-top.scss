@@ -136,6 +136,7 @@
     display: block;
     font-size: rem(68);
     font-family: $second-font-family;
+    font-style: italic;
     color: $color-main-dark2;
     position: absolute;
     left: rem(20);
@@ -156,6 +157,7 @@
     display: block;
     font-size: rem(68);
     font-family: $second-font-family;
+    font-style: italic;
     color: $color-main-dark2;
     position: absolute;
     right: rem(20);
@@ -176,6 +178,7 @@
     display: block;
     font-size: rem(68);
     font-family: $second-font-family;
+    font-style: italic;
     color: $color-main-dark2;
     position: absolute;
     left: rem(20);
@@ -205,6 +208,7 @@
 .sub-service-top__title-en{
   font-size: rem(14);
   font-family: $second-font-family;
+  font-style: italic;
   color: $color-main-dark2;
   margin-top: rem(4);
   @include mq(tab) {

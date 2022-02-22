@@ -41,10 +41,9 @@
 .service-block__item:nth-child(1):before {
   content: "01";
   display: block;
-  width: rem(106);
-  height: rem(121);
   font-size: rem(100);
   font-family: $second-font-family;
+  font-style: italic;
   color: $color-main-dark2;
   position: absolute;
   top: rem(-68);
@@ -55,10 +54,9 @@
 .service-block__item:nth-child(2):before {
   content: "02";
   display: block;
-  width: rem(106);
-  height: rem(121);
   font-size: rem(100);
   font-family: $second-font-family;
+  font-style: italic;
   color: $color-main-dark2;
   position: absolute;
   top: rem(-68);
@@ -69,10 +67,9 @@
 .service-block__item:nth-child(3):before {
   content: "03";
   display: block;
-  width: rem(106);
-  height: rem(121);
   font-size: rem(100);
   font-family: $second-font-family;
+  font-style: italic;
   color: $color-main-dark2;
   position: absolute;
   top: rem(-68);
@@ -83,10 +80,9 @@
 .service-block__item:nth-child(1):after {
   content: "01";
   display: block;
-  width: rem(106);
-  height: rem(121);
   font-size: rem(100);
   font-family: $second-font-family;
+  font-style: italic;
   color: $white;
   position: absolute;
   top: rem(-65);
@@ -97,10 +93,9 @@
 .service-block__item:nth-child(2):after {
   content: "02";
   display: block;
-  width: rem(106);
-  height: rem(121);
   font-size: rem(100);
   font-family: $second-font-family;
+  font-style: italic;
   color: $white;
   position: absolute;
   top: rem(-65);
@@ -111,10 +106,9 @@
 .service-block__item:nth-child(3):after {
   content: "03";
   display: block;
-  width: rem(106);
-  height: rem(121);
   font-size: rem(100);
   font-family: $second-font-family;
+  font-style: italic;
   color: $white;
   position: absolute;
   top: rem(-65);

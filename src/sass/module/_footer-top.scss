@@ -65,6 +65,7 @@
   margin: rem(40) auto 0;
   height: rem(77);
   font-family: $second-font-family;
+  font-style: italic;
   
   @include mq(tab) {
     width: min(100%, rem(315));

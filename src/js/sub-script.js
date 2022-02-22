@@ -52,9 +52,6 @@ tlTopDownload.fromTo('.js-top-download' , {
   )
 
   //下層ページMV
-
-
-
 gsap.from('.js-sub-mv-decoration ' , {
   width:'100%',
   duration:0.8

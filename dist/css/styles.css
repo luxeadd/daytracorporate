@@ -1450,6 +1450,7 @@ input[type=checkbox]:checked + span::after {
   height: 77px;
   height: 4.8125rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
 }
 @media screen and (min-width: 768px) {
   .footer-top__btn {
@@ -2276,6 +2277,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 52px;
   font-size: 3.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   line-height: 1.21538;
   color: #023E78;
   text-transform: uppercase;
@@ -2373,13 +2375,10 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(1):before {
   content: "01";
   display: block;
-  width: 106px;
-  width: 6.625rem;
-  height: 121px;
-  height: 7.5625rem;
   font-size: 100px;
   font-size: 6.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   position: absolute;
   top: -68px;
@@ -2392,13 +2391,10 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(2):before {
   content: "02";
   display: block;
-  width: 106px;
-  width: 6.625rem;
-  height: 121px;
-  height: 7.5625rem;
   font-size: 100px;
   font-size: 6.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   position: absolute;
   top: -68px;
@@ -2411,13 +2407,10 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(3):before {
   content: "03";
   display: block;
-  width: 106px;
-  width: 6.625rem;
-  height: 121px;
-  height: 7.5625rem;
   font-size: 100px;
   font-size: 6.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   position: absolute;
   top: -68px;
@@ -2430,13 +2423,10 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(1):after {
   content: "01";
   display: block;
-  width: 106px;
-  width: 6.625rem;
-  height: 121px;
-  height: 7.5625rem;
   font-size: 100px;
   font-size: 6.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #fff;
   position: absolute;
   top: -65px;
@@ -2449,13 +2439,10 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(2):after {
   content: "02";
   display: block;
-  width: 106px;
-  width: 6.625rem;
-  height: 121px;
-  height: 7.5625rem;
   font-size: 100px;
   font-size: 6.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #fff;
   position: absolute;
   top: -65px;
@@ -2468,13 +2455,10 @@ input[type=checkbox]:checked + span::after {
 .service-block__item:nth-child(3):after {
   content: "03";
   display: block;
-  width: 106px;
-  width: 6.625rem;
-  height: 121px;
-  height: 7.5625rem;
   font-size: 100px;
   font-size: 6.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #fff;
   position: absolute;
   top: -65px;
@@ -2877,6 +2861,7 @@ input[type=checkbox]:checked + span::after {
   color: #023E78;
   background: #fff;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
@@ -2958,6 +2943,7 @@ input[type=checkbox]:checked + span::after {
   padding-bottom: 24.4px;
   padding-bottom: 1.525rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
 }
 @media screen and (min-width: 768px) {
   .sub-service-flow__head {
@@ -2975,6 +2961,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 20px;
   font-size: 1.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -3387,6 +3374,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 68px;
   font-size: 4.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   position: absolute;
   left: 20px;
@@ -3408,6 +3396,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 68px;
   font-size: 4.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   position: absolute;
   right: 20px;
@@ -3429,6 +3418,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 68px;
   font-size: 4.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   position: absolute;
   left: 20px;
@@ -3461,6 +3451,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 14px;
   font-size: 0.875rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   margin-top: 4px;
   margin-top: 0.25rem;
@@ -3615,6 +3606,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 20px;
   font-size: 1.25rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   position: relative;
   color: #fff;
   width: 100%;
@@ -4009,6 +4001,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 14px;
   font-size: 0.875rem;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   color: #023E78;
   line-height: 1;
 }
@@ -4840,6 +4833,7 @@ input[type=checkbox]:checked + span::after {
   font-size: 2.5rem;
   color: #023E78;
   font-family: "Fira Sans", sans-serif;
+  font-style: italic;
   font-weight: 500;
   text-transform: uppercase;
 }

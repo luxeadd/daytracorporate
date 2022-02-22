@@ -19,19 +19,19 @@
           <div class="swiper-slide">
             <picture>
               <source srcset="<?php $mvImg1 = scf::get('mv_img1'); echo wp_get_attachment_url( $mvImg1 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php $mvImg1 = scf::get('mv_img1'); echo wp_get_attachment_url( $mvImg1 ); ?>" alt="MV画像">
+              <img src="<?php $mvImg1 = scf::get('mv_img1_sp'); echo wp_get_attachment_url( $mvImg1 ); ?>" alt="MV画像">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="<?php $mvImg2 = scf::get('mv_img2'); echo wp_get_attachment_url( $mvImg2 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php $mvImg2 = scf::get('mv_img2'); echo wp_get_attachment_url( $mvImg2 ); ?>" alt="MV画像">
+              <img src="<?php $mvImg2 = scf::get('mv_img2_sp'); echo wp_get_attachment_url( $mvImg2 ); ?>" alt="MV画像">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="<?php $mvImg3 = scf::get('mv_img3'); echo wp_get_attachment_url( $mvImg3 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php $mvImg3 = scf::get('mv_img3'); echo wp_get_attachment_url( $mvImg3 ); ?>" alt="MV画像">
+              <img src="<?php $mvImg3 = scf::get('mv_img3_sp'); echo wp_get_attachment_url( $mvImg3 ); ?>" alt="MV画像">
             </picture>
           </div>
         </div>
