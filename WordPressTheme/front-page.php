@@ -25,13 +25,13 @@
           <div class="swiper-slide">
             <picture>
               <source srcset="<?php $mvImg2 = scf::get('mv_img2'); echo wp_get_attachment_url( $mvImg2 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php $mvImg2 = scf::get('mv_img2_sp'); echo wp_get_attachment_url( $mvImg2 ); ?>" alt="MV画像">
+              <img src="<?php $mvImg2 = scf::get('mv_img2_sp'); echo wp_get_attachment_url( $mvImg2 ); ?>" alt="MV画像2">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
               <source srcset="<?php $mvImg3 = scf::get('mv_img3'); echo wp_get_attachment_url( $mvImg3 ); ?>" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-              <img src="<?php $mvImg3 = scf::get('mv_img3_sp'); echo wp_get_attachment_url( $mvImg3 ); ?>" alt="MV画像">
+              <img src="<?php $mvImg3 = scf::get('mv_img3_sp'); echo wp_get_attachment_url( $mvImg3 ); ?>" alt="MV画像3">
             </picture>
           </div>
         </div>
@@ -50,6 +50,7 @@
       <p class="too-mv__title-jp js-mv-jp">世界で活躍できるグローバルな人材を育てる</p><!-- /.too-mv__title-jp -->
     </div><!-- /.top-mv__body -->
   </div><!-- /.top-mv -->
+
   <!-- about -->
   <section class="top-about top-about-layout  js-top-about">
     <div class="inner">
@@ -82,6 +83,7 @@
       </div><!-- /.top-about__flex -->
     </div><!-- /.inner -->
   </section><!-- /.top-about -->
+
   <!-- service -->
   <section class="top-service top-service-layout js-top-service">
     <div class="inner">
@@ -111,7 +113,7 @@
               </li><!-- /.service-block__item -->
               <li class="service-block__item">
                 <div class="service-block__img js-top-service-img">
-                  <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service2.jpg" alt=" ">
+                  <img src="<?php echo get_template_directory_uri(  ) ?>/./assets/images/common/top-service2.jpg" alt="異文化研修画像">
                   <h3 class="service-block__title">
                     <span>異文化</span><span>コミュニケーション研修</span>
                   </h3><!-- /.service-block__title -->
@@ -133,6 +135,7 @@
       </div><!-- /.top-service__flex -->
     </div><!-- /.inner -->
   </section><!-- /.top-service -->
+
   <!-- case -->
   <section class="top-case js-top-case">
     <div class="inner">
@@ -166,7 +169,7 @@
       <?php while ( $related_query->have_posts() ) : ?>
         <?php $related_query->the_post(); ?>
               <article class="case-block__item">
-                <a href="<?php echo esc_url( home_url( '/case/' ) ); ?>">
+                <a href="/case/#<?php $postId = get_the_ID(); echo $postId ?>">
                   <div class="case-block__header">
                     <figure class="case-block__figure js-top-case-img">
                     <?php

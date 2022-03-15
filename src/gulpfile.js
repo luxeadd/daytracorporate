@@ -80,6 +80,7 @@ const cssSass = () => {
         }))
         .pipe(postcss([cssnext(browsers)]))
         .pipe(sourcemaps.write('./'))
+        .pipe(cleanCSS())
         .pipe(dest(destPath.css))
         .pipe(dest(destWpPath.css))
         .pipe(notify({
@@ -204,4 +205,5 @@ const ejsCompile = (done) => {
         };
 
         // npx gulpで出力する内容
-        exports.default = series(series(clean, cssSass, imgImagemin, jsCompile,ejsCompile), parallel(watchFiles, browserSyncFunc));
+        // exports.default = series(series(clean, cssSass, imgImagemin, jsCompile,ejsCompile), parallel(watchFiles, browserSyncFunc));
+        exports.default = series(series(clean, cssSass, imgImagemin, jsCompile,ejsCompile), parallel(watchFiles));

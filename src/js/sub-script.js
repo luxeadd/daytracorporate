@@ -67,12 +67,14 @@ gsap.fromTo('.js-sub-mv-title' , {
   ease: 'power2. out',
 })
 
-  
-
-
-
-
-
-
-
 //==============================
+
+//ページ遷移時にヘッダー分の高さを調整する
+document.addEventListener("DOMContentLoaded", () => {
+  if (location.hash) {
+    const headerHeight = document.querySelector(".js-header").clientHeight;
+    setTimeout(() => {
+      window.scrollBy(0, - headerHeight);
+    },100)
+  }
+})

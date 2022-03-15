@@ -77,7 +77,7 @@
 		<?php if ($my_query->have_posts()): // 投稿がある場合 ?>
 	  <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                <div class="case-items__item">
-                <article class="case-item">
+                <article id="<?php $postId = get_the_ID(); echo $postId ?>" class="case-item">
                   <div class="case-item__header">
                     <h3 class="case-item__title">
                       <span><?php echo SCF::get( 'case_category' );?> </span>
@@ -147,7 +147,7 @@
 		<?php if ($my_query->have_posts()): // 投稿がある場合 ?>
 	  <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                <div class="case-items__item">
-                <article class="case-item">
+                <article id="<?php $postId = get_the_ID(); echo $postId ?>" class="case-item">
                   <div class="case-item__header">
                     <h3 class="case-item__title">
                       <span><?php echo SCF::get( 'case_category' );?> </span>
@@ -217,7 +217,7 @@
 		<?php if ($my_query->have_posts()): // 投稿がある場合 ?>
 	  <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                <div class="case-items__item">
-                <article class="case-item">
+                <article id="<?php $postId = get_the_ID(); echo $postId ?>" class="case-item">
                   <div class="case-item__header">
                     <h3 class="case-item__title">
                       <span><?php echo SCF::get( 'case_category' );?> </span>

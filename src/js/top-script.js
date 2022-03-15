@@ -1,6 +1,5 @@
 "use strict"
 
-
 //header==============================
 //ハンバーガーメニュー---------------
 const jsHamburger = document.getElementById('js-hamburger');
@@ -20,6 +19,7 @@ jsHamburger.addEventListener('click', function() {
     spHeaderMenu.setAttribute('area-hidden','true')
   };
 });
+
 //ドラワーメニュー展開時背景クリックアクション
 drawerBackground.addEventListener('click', () => {
   body.classList.remove('is-drawerActive')
@@ -302,12 +302,14 @@ tlTopDownload.fromTo('.js-top-download' , {
   }
   )
 
-  
-
-
-
-
-
-
-
 //==============================
+
+//ページ遷移時にヘッダー分の高さを調整する
+document.addEventListener("DOMContentLoaded", () => {
+  if (location.hash) {
+    const headerHeight = document.querySelector(".js-header").clientHeight;
+    setTimeout(() => {
+      window.scrollBy(0, - headerHeight);
+    },100)
+  }
+})
